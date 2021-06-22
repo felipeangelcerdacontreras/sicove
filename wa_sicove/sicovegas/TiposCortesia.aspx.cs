@@ -1,0 +1,153 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Script.Serialization;
+using System.Web.Services;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using wa_sicove.core;
+
+namespace wa_sicove.sicovegas
+{
+    public partial class TiposCortesia : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        #region CLASSES
+        public class ajaxResponse
+        {
+            public bool Result { get; set; }
+            public string Message { get; set; }
+            public string Data { get; set; }
+        }
+        public class objEst
+        {
+            public objEst(int id, string descripcion, int estatus)
+            {
+                this.id = id;
+                this.descripcion = descripcion;
+                this.estatus = estatus;
+            }
+
+            public int id { get; set; }
+            public string descripcion { get; set; }
+            public int estatus { get; set; }
+        }
+        #endregion
+
+        [WebMethod(EnableSession = true)]
+        public static ajaxResponse traer()
+        {
+            ajaxResponse Response = new ajaxResponse();
+
+            try
+            {
+                sicoveDBDataContext context = new sicoveDBDataContext();
+                List<objEst> lista = new List<objEst>();
+                var consulta = from ro in context.si_tipos_cortesia select ro;
+                foreach (var item in consulta)
+                {
+                    lista.Add(new objEst(
+                        item.id_tipo,
+                        item.descripcion,
+                        (int)item.estatus
+                    ));
+                }
+                var jsonSerialiser = new JavaScriptSerializer();
+                var json = jsonSerialiser.Serialize(lista);
+                Response.Result = true;
+                Response.Message = "Correctamente";
+                Response.Data = json;
+
+            }
+            catch (Exception ex)
+            {
+                Response.Result = false;
+                Response.Message = "Ha ocurrido un error al iniciar la sesión del usuario. " + ex.Message;
+                Response.Data = null;
+            }
+
+            return Response;
+        }
+
+
+        [WebMethod(EnableSession = true)]
+        public static ajaxResponse guardar(string desc, int activo, int id)
+        {
+            ajaxResponse Response = new ajaxResponse();
+
+            try
+            {
+                sicoveDBDataContext context = new sicoveDBDataContext();
+                si_tipos_cortesia roll = new si_tipos_cortesia();
+                roll.descripcion = desc;
+                roll.estatus = activo;
+                context.si_tipos_cortesia.InsertOnSubmit(roll);
+                context.SubmitChanges();
+                // Alimentamos Bitacora
+                si_bitacora b = new si_bitacora();
+                b.bit_fecha = DateTime.Now.Date;
+                b.bit_tiempo = DateTime.Now.TimeOfDay;
+                b.id_usuario = ((si_usuarios)HttpContext.Current.Session["sesionUsuario"]).id_usuario;
+                b.bit_modulo = "TiposCortesia.aspx";
+                b.bit_accion = "Guardar TipoCortesia";
+                b.bit_observaciones = ((si_usuarios)HttpContext.Current.Session["sesionUsuario"]).us_nombre + "(" + ((si_usuarios)HttpContext.Current.Session["sesionUsuario"]).us_user + ") - Usuario Agrego Nuevo TipoCortesia = " + desc;
+                ClassBicatora.insertBitacora(b);
+                Response.Result = true;
+                Response.Message = "Agregado Correctamente";
+                Response.Data = null;
+
+            }
+            catch (Exception ex)
+            {
+                Response.Result = false;
+                Response.Message = "Ha ocurrido un error al iniciar la sesión del usuario. " + ex.Message;
+                Response.Data = null;
+            }
+
+            return Response;
+        }
+
+        [WebMethod(EnableSession = true)]
+        public static ajaxResponse actualizar(string desc, int activo, int id)
+        {
+            ajaxResponse Response = new ajaxResponse();
+
+            try
+            {
+                sicoveDBDataContext context = new sicoveDBDataContext();
+                si_tipos_cortesia roll = null;
+                roll = context.si_tipos_cortesia.Where(x => x.id_tipo.Equals(id)).FirstOrDefault();
+                roll.descripcion = desc;
+                roll.estatus = activo;
+                context.SubmitChanges();
+                // Alimentamos Bitacora
+                si_bitacora b = new si_bitacora();
+                b.bit_fecha = DateTime.Now.Date;
+                b.bit_tiempo = DateTime.Now.TimeOfDay;
+                b.id_usuario = ((si_usuarios)HttpContext.Current.Session["sesionUsuario"]).id_usuario;
+                b.bit_modulo = "TiposCortesia.aspx";
+                b.bit_accion = "Actualiza TiposCortesia";
+                b.bit_observaciones = ((si_usuarios)HttpContext.Current.Session["sesionUsuario"]).us_nombre + "(" + ((si_usuarios)HttpContext.Current.Session["sesionUsuario"]).us_user + ") - Usuario Actualizo TiposCortesia, Id = " + id;
+                ClassBicatora.insertBitacora(b);
+                Response.Result = true;
+                Response.Message = "Actualizado Correctamente";
+                Response.Data = null;
+
+            }
+            catch (Exception ex)
+            {
+                Response.Result = false;
+                Response.Message = "Ha ocurrido un error al iniciar la sesión del usuario. " + ex.Message;
+                Response.Data = null;
+            }
+
+            return Response;
+        }
+    }
+}

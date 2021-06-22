@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\awsof\Documents\pSICOVE</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="ApplicationInsights.config">
+      <publishTime>06/02/2020 12:09:36</publishTime>
+    </File>
+    <File Include="assets/doc/CARGA MANUAL.csv">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="assets/js/barcoder/jquery-barcode.js">
+      <publishTime>02/22/2019 02:44:02</publishTime>
+    </File>
+    <File Include="assets/js/barcoder/jquery-barcode.min.js">
+      <publishTime>02/22/2019 02:44:02</publishTime>
+    </File>
+    <File Include="assets/js/barcoder/JsBarcode.code128.min.js">
+      <publishTime>11/02/2020 16:05:58</publishTime>
+    </File>
+    <File Include="assets/js/bootstrap/bootstrap.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/global-styles/global-styles.js">
+      <publishTime>06/23/2020 11:08:08</publishTime>
+    </File>
+    <File Include="assets/js/jquery-ui/jquery-ui-1.10.4.custom.min.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/jquery.blockUI.js">
+      <publishTime>09/14/2020 17:07:16</publishTime>
+    </File>
+    <File Include="assets/js/jquery/jquery-2.1.0.min.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/jszip.min.js">
+      <publishTime>06/03/2021 12:33:19</publishTime>
+    </File>
+    <File Include="assets/js/king-chart-stat-transparent.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/king-chart-stat.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/king-common.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/king-components-transparent.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/king-components.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/king-elements.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/king-form-layouts.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/king-page-transparent.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/king-page.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/king-table.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-contextmenu/bootstrap-contextmenu.js">
+      <publishTime>02/06/2020 12:15:12</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-datepicker/bootstrap-datepicker.js">
+      <publishTime>03/10/2020 18:05:18</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-editable/address.custom.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-editable/bootstrap-editable.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-editable/demo-mock.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-editable/jquery.mockjax.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-multiselect/bootstrap-multiselect.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-progressbar/bootstrap-progressbar.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-progressbar/bootstrap-progressbar.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-slider/bootstrap-slider.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-switch/bootstrap-switch.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-touchspin/jquery.bootstrap-touchspin.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-tour/bootstrap-tour.custom.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/buttons-html5/buttons.html5.min.js">
+      <publishTime>06/21/2021 17:45:44</publishTime>
+    </File>
+    <File Include="assets/js/plugins/datatable/buttons.flash.min.js">
+      <publishTime>06/03/2021 12:31:15</publishTime>
+    </File>
+    <File Include="assets/js/plugins/datatable/dataTables.bootstrap.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/datatable/dataTables.buttons.min.js">
+      <publishTime>06/03/2021 12:09:34</publishTime>
+    </File>
+    <File Include="assets/js/plugins/datatable/dataTables.responsive.min.js">
+      <publishTime>07/01/2020 16:29:52</publishTime>
+    </File>
+    <File Include="assets/js/plugins/datatable/exts/dataTables.colReorder.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/datatable/exts/dataTables.colVis.bootstrap.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/datatable/exts/dataTables.tableTools.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/datatable/jquery.dataTables.min.js">
+      <publishTime>06/30/2020 17:46:30</publishTime>
+    </File>
+    <File Include="assets/js/plugins/datatable/plugins/sorting/date-uk.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/datatable/plugins/sorting/file-size.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/datatable/plugins/type-detection/date-uk.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/datatable/plugins/type-detection/file-size.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/daterangepicker/daterangepicker.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/dropzone/dropzone.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/FileSaver/FileSaver.min.js">
+      <publishTime>05/27/2020 21:05:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/fullcalendar/fullcalendar.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/google-map/google-map.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/html2canvas/html2canvas.min.js">
+      <publishTime>06/03/2021 13:03:15</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jqallrangesliders/jQAllRangeSliders-min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jqgrid/i18n/grid.locale-en.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jqgrid/jquery.jqGrid.fluid.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jqgrid/jquery.jqGrid.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jquery-gritter/jquery.gritter.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jquery-mapael/jquery.mapael.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jquery-maskedinput/jquery.masked-input.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jquery-mousewheel/jquery.mousewheel.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jquery-simplecolorpicker/jquery.simplecolorpicker.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jquery-slimscroll/jquery.slimscroll.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jquery-sparkline/jquery.sparkline.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/markdown/bootstrap-markdown.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/markdown/markdown.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/markdown/to-markdown.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/modernizr/modernizr.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/moment/moment.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/morris/morris.css">
+      <publishTime>03/23/2017 20:12:33</publishTime>
+    </File>
+    <File Include="assets/js/plugins/morris/morris.js">
+      <publishTime>03/23/2017 20:12:33</publishTime>
+    </File>
+    <File Include="assets/js/plugins/morris/morris.min.js">
+      <publishTime>03/23/2017 20:12:33</publishTime>
+    </File>
+    <File Include="assets/js/plugins/parsley-validation/parsley.min.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/pdfmake/pdfmake.js">
+      <publishTime>10/26/1985 03:15:00</publishTime>
+    </File>
+    <File Include="assets/js/plugins/pdfmake/pdfmake.js.map">
+      <publishTime>10/26/1985 03:15:00</publishTime>
+    </File>
+    <File Include="assets/js/plugins/pdfmake/pdfmake.min.js">
+      <publishTime>10/26/1985 03:15:00</publishTime>
+    </File>
+    <File Include="assets/js/plugins/pdfmake/pdfmake.min.js.map">
+      <publishTime>10/26/1985 03:15:00</publishTime>
+    </File>
+    <File Include="assets/js/plugins/pdfmake/vfs_fonts.js">
+      <publishTime>10/26/1985 03:15:00</publishTime>
+    </File>
+    <File Include="assets/js/plugins/raphael/maps/france_departments.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/raphael/maps/usa_states.js">
+      <publishTime>02/06/2020 12:15:14</publishTime>
+    </File>
+    <File Include="assets/js/plugins/raphael/maps/world_countries.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/raphael/raphael-2.1.0.min.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/raphael/raphael-min.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/select2/select2.full.js">
+      <publishTime>06/03/2021 13:11:56</publishTime>
+    </File>
+    <File Include="assets/js/plugins/select2/select2.full.min.js">
+      <publishTime>06/03/2021 13:11:56</publishTime>
+    </File>
+    <File Include="assets/js/plugins/select2/select2.js">
+      <publishTime>06/03/2021 13:11:56</publishTime>
+    </File>
+    <File Include="assets/js/plugins/select2/select2.min.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/SheetJS/xlsx.full.min.js">
+      <publishTime>06/30/2020 13:55:42</publishTime>
+    </File>
+    <File Include="assets/js/plugins/stat/colorbrewer.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/stat/d3.min.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/stat/flot/jquery.flot.min.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/stat/flot/jquery.flot.orderBars.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/stat/flot/jquery.flot.pie.min.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/stat/flot/jquery.flot.resize.min.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/stat/flot/jquery.flot.selection.min.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/stat/flot/jquery.flot.time.min.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/stat/flot/jquery.flot.tooltip.min.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/stat/jquery.easypiechart.min.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/summernote/summernote.min.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/tree/jstree.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/tree/themes/default/32px.png">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/tree/themes/default/40px.png">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/tree/themes/default/throbber.gif">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/typeahead/typeahead.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/typeahead/typeaheadjs.1.5.1.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="assets/js/plugins/validator/validator.js">
+      <publishTime>03/16/2017 20:01:00</publishTime>
+    </File>
+    <File Include="assets/js/plugins/validator/validator.min.js">
+      <publishTime>03/16/2017 20:01:00</publishTime>
+    </File>
+    <File Include="assets/js/plugins/wizard/wizard.min.js">
+      <publishTime>02/06/2020 12:15:16</publishTime>
+    </File>
+    <File Include="bin/ApplicationInsights.config">
+      <publishTime>06/02/2020 12:09:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
+      <publishTime>07/12/2015 19:04:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.DependencyCollector.dll">
+      <publishTime>10/03/2016 14:26:18</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
+      <publishTime>10/03/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
+      <publishTime>09/03/2016 12:00:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.Web.dll">
+      <publishTime>10/03/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AI.WindowsServer.dll">
+      <publishTime>10/03/2016 14:26:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ApplicationInsights.dll">
+      <publishTime>09/03/2016 11:57:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/wa_sicove.dll">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="bin/wa_sicove.pdb">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="core/sicoveDB.dbml">
+      <publishTime>11/03/2021 13:04:08</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>06/02/2020 12:09:36</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.js">
+      <publishTime>06/02/2020 12:09:36</publishTime>
+    </File>
+    <File Include="scripts/ai.0.22.9-build00167.min.js">
+      <publishTime>06/02/2020 12:09:36</publishTime>
+    </File>
+    <File Include="scripts/Autoconsumo.js">
+      <publishTime>02/02/2021 21:37:56</publishTime>
+    </File>
+    <File Include="scripts/CapacidadTanque.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/CargaVentas.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/Cilindros.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/Comodatarios.js">
+      <publishTime>08/06/2021 10:22:27</publishTime>
+    </File>
+    <File Include="scripts/configuraciones.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/ContServicios.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/CortesiasAlta.js">
+      <publishTime>08/06/2021 13:14:41</publishTime>
+    </File>
+    <File Include="scripts/cortesiasAtomat.js">
+      <publishTime>07/05/2021 12:38:11</publishTime>
+    </File>
+    <File Include="scripts/EstatusMantto.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/gestoriaConsulta.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/gestoriaConsultaServicios.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/GiroAutoServicio.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/IndicadoresUnidades.js">
+      <publishTime>05/03/2021 17:34:10</publishTime>
+    </File>
+    <File Include="scripts/Lider.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/Mantenimientos.js">
+      <publishTime>01/04/2021 10:58:28</publishTime>
+    </File>
+    <File Include="scripts/MarcaKit.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/MarcaTanque.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/pdfCortesias.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/Personal.js">
+      <publishTime>06/07/2020 17:13:40</publishTime>
+    </File>
+    <File Include="scripts/RegistroUnidades.js">
+      <publishTime>04/02/2021 23:46:54</publishTime>
+    </File>
+    <File Include="scripts/ReportesMtto.js">
+      <publishTime>01/04/2021 11:45:06</publishTime>
+    </File>
+    <File Include="scripts/Servicios.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/ServiciosC.js">
+      <publishTime>08/06/2021 11:49:27</publishTime>
+    </File>
+    <File Include="scripts/TipoPersonal.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/TipoRefacciones.js">
+      <publishTime>09/03/2021 18:13:50</publishTime>
+    </File>
+    <File Include="scripts/TipoTanque.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/Unidades.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="scripts/unidadesFiltros.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Admin.Master">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Autoconsumo.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Bases.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/CapacidadTanque.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/CargaVentas.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Cilindros.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Ciudades.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Comodatarios.aspx">
+      <publishTime>08/06/2021 10:16:20</publishTime>
+    </File>
+    <File Include="sicoveadmin/configuraciones.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/ContServicios.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Cortesias.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/CortesiasAlta.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/cortesiasAutom.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Default.aspx">
+      <publishTime>07/02/2020 13:04:28</publishTime>
+    </File>
+    <File Include="sicoveadmin/Dispositivos.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Empresas.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Estaciones.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Estados.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/EstatusMatto.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/FileUploadHandler.ashx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/gestoriaRecargas.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/GiroAutoServicio.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Giros.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/IndicadoresUnidades.aspx">
+      <publishTime>12/03/2021 13:08:48</publishTime>
+    </File>
+    <File Include="sicoveadmin/Lider.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Mantenimientos.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Marcakit.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Marcas.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/MarcaTanque.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Modulos.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/modulos_estacion.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Permisos.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Personal.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/RegistroUnidades.aspx">
+      <publishTime>04/02/2021 17:17:54</publishTime>
+    </File>
+    <File Include="sicoveadmin/ReportesMtto.aspx">
+      <publishTime>01/04/2021 10:35:12</publishTime>
+    </File>
+    <File Include="sicoveadmin/Roles.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Servicios.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/ServiciosComodatarios.aspx">
+      <publishTime>02/06/2021 12:15:46</publishTime>
+    </File>
+    <File Include="sicoveadmin/serviciosTerminal.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Tecnicos.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/TipoPersonal.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/TipoRefacciones.aspx">
+      <publishTime>09/03/2021 13:10:02</publishTime>
+    </File>
+    <File Include="sicoveadmin/TiposCortesia.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/TipoTanque.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/tipoTiempos.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Unidades.aspx">
+      <publishTime>11/02/2021 13:38:28</publishTime>
+    </File>
+    <File Include="sicoveadmin/unidadesFiltro.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicoveadmin/Usuarios.aspx">
+      <publishTime>02/03/2021 09:18:56</publishTime>
+    </File>
+    <File Include="sicoveadmin/Zonas.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicovegas/Admin.Master">
+      <publishTime>10/06/2021 17:21:24</publishTime>
+    </File>
+    <File Include="sicovegas/Autoconsumo.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/Ciudades.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/configuraciones.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/cortesiasAutom.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/Default.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="sicovegas/Dispositivos.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/Empresas.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/Estaciones.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/Estados.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/EstatusMatto.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/FileUploadHandler.ashx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/GiroAutoServicio.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/Modulos.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/Permisos.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/Personal.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/RegistroUnidades.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/ReportesMtto.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/Roles.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/Servicios.aspx">
+      <publishTime>08/06/2021 11:21:56</publishTime>
+    </File>
+    <File Include="sicovegas/ServiciosComodatarios.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/serviciosTerminal.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/Tablero.aspx">
+      <publishTime>10/06/2021 17:22:21</publishTime>
+    </File>
+    <File Include="sicovegas/Tecnicos.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/TipoPersonal.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/TipoRefacciones.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/TiposCortesia.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/TipoTanque.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/tipoTiempos.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/Unidades.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="sicovegas/Usuarios.aspx">
+      <publishTime>04/06/2021 17:12:34</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

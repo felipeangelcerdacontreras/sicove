@@ -1,0 +1,724 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="sicove_gas_test" Class="sicoveDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=LAPTOP-6UFQQCAB\AWSOFTWARE;Initial Catalog=sicove_gas_test;Persist Security Info=False;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="sicove_gas_testConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.si_lideres" Member="si_lideres">
+    <Type Name="si_lideres">
+      <Column Name="id_lider" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="li_nombre" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="li_apellido" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="li_telefono" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="li_correo" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="li_comicion" Type="System.Decimal" DbType="Decimal(20,2)" CanBeNull="true" />
+      <Column Name="li_estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="si_lideres_si_unidades" Member="si_unidades" ThisKey="id_lider" OtherKey="id_lider" Type="si_unidades" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_bitacora" Member="si_bitacora">
+    <Type Name="si_bitacora">
+      <Column Name="id_bitacora" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_usuario" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="bit_accion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="bit_modulo" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="bit_fecha" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="bit_tiempo" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="bit_observaciones" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+      <Association Name="si_usuarios_si_bitacora" Member="si_usuarios" ThisKey="id_usuario" OtherKey="id_usuario" Type="si_usuarios" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_capasidad_tanque" Member="si_capasidad_tanque">
+    <Type Name="si_capasidad_tanque">
+      <Column Name="id_capasidad" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ctp_capasidad" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ctp_estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="si_capasidad_tanque_si_tanques" Member="si_tanques" ThisKey="id_capasidad" OtherKey="id_capasidad" Type="si_tanques" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_cilindros" Member="si_cilindros">
+    <Type Name="si_cilindros">
+      <Column Name="id_cilindro" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ci_numero_cilindro" Type="System.Decimal" DbType="Decimal(10,0) NOT NULL" CanBeNull="false" />
+      <Column Name="ci_estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="si_cilindros_si_kits" Member="si_kits" ThisKey="id_cilindro" OtherKey="id_cilindro" Type="si_kits" />
+      <Association Name="si_cilindros_si_unidades" Member="si_unidades" ThisKey="id_cilindro" OtherKey="id_cilindro" Type="si_unidades" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_ciudades" Member="si_ciudades">
+    <Type Name="si_ciudades">
+      <Column Name="id_ciudad" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cd_numero" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="cd_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="cd_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_ciudades_si_zonas" Member="si_zonas" ThisKey="id_ciudad" OtherKey="id_ciudad" Type="si_zonas" />
+      <Association Name="si_estados_si_ciudades" Member="si_estados" ThisKey="id_estado" OtherKey="id_estado" Type="si_estados" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_dispositivos" Member="si_dispositivos">
+    <Type Name="si_dispositivos">
+      <Column Name="id_dispositivo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="dis_no_equipo" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="dis_no_serie" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="dis_no_chip" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="id_zona" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dis_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_zonas_si_dispositivos" Member="si_zonas" ThisKey="id_zona" OtherKey="id_zona" Type="si_zonas" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_estaciones" Member="si_estaciones">
+    <Type Name="si_estaciones">
+      <Column Name="id_estacion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_zona" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="esta_numero" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="esta_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="esta_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="esta_direccion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="esta_lat" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="esta_lon" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Association Name="si_estaciones_si_modulos_estacion" Member="si_modulos_estacions" ThisKey="id_estacion" OtherKey="id_estacion" Type="si_modulos_estacion" />
+      <Association Name="si_estaciones_si_ventas" Member="si_ventas" ThisKey="id_estacion" OtherKey="id_estacion" Type="si_ventas" />
+      <Association Name="si_estaciones_si_cortesias" Member="si_cortesias" ThisKey="id_estacion" OtherKey="id_estacion" Type="si_cortesias" />
+      <Association Name="si_zonas_si_estaciones" Member="si_zonas" ThisKey="id_zona" OtherKey="id_zona" Type="si_zonas" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_estados" Member="si_estados">
+    <Type Name="si_estados">
+      <Column Name="id_estado" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="es_numero" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="es_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="es_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_estados_si_ciudades" Member="si_ciudades" ThisKey="id_estado" OtherKey="id_estado" Type="si_ciudades" />
+      <Association Name="si_estados_si_zonas" Member="si_zonas" ThisKey="id_estado" OtherKey="id_estado" Type="si_zonas" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_facturacion" Member="si_facturacion">
+    <Type Name="si_facturacion">
+      <Column Name="id_facturacion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_empresa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fa_razon_social" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="fa_rfc" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="fa_telefono" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="fa_email" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="fa_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fa_direccion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Association Name="si_empresas_si_facturacion" Member="si_empresas" ThisKey="id_empresa" OtherKey="id_empresa" Type="si_empresas" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_giros_autoservicio" Member="si_giros_autoservicio">
+    <Type Name="si_giros_autoservicio">
+      <Column Name="id_giro_autoservicio" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="gia_descripcion" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="gia_estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="si_giros_autoservicio_si_unidades" Member="si_unidades" ThisKey="id_giro_autoservicio" OtherKey="id_giro_autoservicio" Type="si_unidades" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_kits" Member="si_kits">
+    <Type Name="si_kits">
+      <Column Name="id_kit" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ki_observacion" Type="System.String" DbType="NVarChar(800)" CanBeNull="true" />
+      <Column Name="ki_vaporizador" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ki_riel" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="id_modelo_kit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_cilindro" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ki_centralita" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ki_estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="id_unidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_cilindros_si_kits" Member="si_cilindros" ThisKey="id_cilindro" OtherKey="id_cilindro" Type="si_cilindros" IsForeignKey="true" />
+      <Association Name="si_modelos_kit_si_kits" Member="si_modelos_kit" ThisKey="id_modelo_kit" OtherKey="id_modelo_kit" Type="si_modelos_kit" IsForeignKey="true" />
+      <Association Name="si_unidades_si_kits" Member="si_unidades" ThisKey="id_unidad" OtherKey="id_unidad" Type="si_unidades" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_marca_tanque" Member="si_marca_tanque">
+    <Type Name="si_marca_tanque">
+      <Column Name="id_marca_tanque" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="mtq_descripcion" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="mtq_estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="si_marca_tanque_si_tanques" Member="si_tanques" ThisKey="id_marca_tanque" OtherKey="id_marca_tanque" Type="si_tanques" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_marcas" Member="si_marcas">
+    <Type Name="si_marcas">
+      <Column Name="id_marca" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ma_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="ma_modelo" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="ma_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_marcas_si_modelos" Member="si_modelos" ThisKey="id_marca" OtherKey="id_marca" Type="si_modelos" />
+      <Association Name="si_marcas_si_unidades" Member="si_unidades" ThisKey="id_marca" OtherKey="id_marca" Type="si_unidades" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_marcas_kit" Member="si_marcas_kit">
+    <Type Name="si_marcas_kit">
+      <Column Name="id_marca_kit" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="mak_descripcion" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="mak_estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="si_marcas_kit_si_modelos_kit" Member="si_modelos_kit" ThisKey="id_marca_kit" OtherKey="id_marca_kit" Type="si_modelos_kit" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_modelos" Member="si_modelos">
+    <Type Name="si_modelos">
+      <Column Name="id_modelo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_marca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mod_descripcion" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="mod_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_modelos_si_unidades" Member="si_unidades" ThisKey="id_modelo" OtherKey="id_modelo" Type="si_unidades" />
+      <Association Name="si_marcas_si_modelos" Member="si_marcas" ThisKey="id_marca" OtherKey="id_marca" Type="si_marcas" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_modelos_kit" Member="si_modelos_kit">
+    <Type Name="si_modelos_kit">
+      <Column Name="id_modelo_kit" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="mok_descripcion" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="mok_estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="id_marca_kit" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="si_modelos_kit_si_kits" Member="si_kits" ThisKey="id_modelo_kit" OtherKey="id_modelo_kit" Type="si_kits" />
+      <Association Name="si_marcas_kit_si_modelos_kit" Member="si_marcas_kit" ThisKey="id_marca_kit" OtherKey="id_marca_kit" Type="si_marcas_kit" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_modulos" Member="si_modulos">
+    <Type Name="si_modulos">
+      <Column Name="id_modulo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="mod_nombre" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="mod_archivo" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="mod_descripcion" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="mod_nivel" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mod_orden" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_padre" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mod_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mod_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="si_modulos_si_modulos" Member="si_modulos2" ThisKey="id_modulo" OtherKey="id_padre" Type="si_modulos" />
+      <Association Name="si_modulos_si_permisos" Member="si_permisos" ThisKey="id_modulo" OtherKey="id_modulo" Type="si_permisos" />
+      <Association Name="si_modulos_si_modulos" Member="si_modulos1" ThisKey="id_padre" OtherKey="id_modulo" Type="si_modulos" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_permisos" Member="si_permisos">
+    <Type Name="si_permisos">
+      <Column Name="id_permiso" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_rol" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_modulo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="per_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_modulos_si_permisos" Member="si_modulos" ThisKey="id_modulo" OtherKey="id_modulo" Type="si_modulos" IsForeignKey="true" />
+      <Association Name="si_roles_si_permisos" Member="si_roles" ThisKey="id_rol" OtherKey="id_rol" Type="si_roles" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_personal" Member="si_personal">
+    <Type Name="si_personal">
+      <Column Name="id_persona" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pe_nombre" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="pe_apellido" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="pe_numero_empleado" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="pe_codigo_barras" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="pe_estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="id_zona" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_tipo_personal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_personal_si_unidades" Member="si_unidades" ThisKey="id_persona" OtherKey="id_persona" Type="si_unidades" />
+      <Association Name="si_personal_si_mantenimineto" Member="si_mantenimineto" ThisKey="id_persona" OtherKey="id_persona" Type="si_mantenimineto" />
+      <Association Name="si_tipo_personal_si_personal" Member="si_tipo_personal" ThisKey="id_tipo_personal" OtherKey="id_tipo_personal" Type="si_tipo_personal" IsForeignKey="true" />
+      <Association Name="si_zonas_si_personal" Member="si_zonas" ThisKey="id_zona" OtherKey="id_zona" Type="si_zonas" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_roles" Member="si_roles">
+    <Type Name="si_roles">
+      <Column Name="id_rol" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="rol_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="rol_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_roles_si_permisos" Member="si_permisos" ThisKey="id_rol" OtherKey="id_rol" Type="si_permisos" />
+      <Association Name="si_roles_si_usuarios" Member="si_usuarios" ThisKey="id_rol" OtherKey="id_rol" Type="si_usuarios" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_tanques" Member="si_tanques">
+    <Type Name="si_tanques">
+      <Column Name="id_tanque" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tq_numero_serie" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="id_marca_tanque" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_tipo_tanque" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_capasidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tq_fecha_fabricacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="tq_multivalvulas" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="tq_estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="id_unidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_capasidad_tanque_si_tanques" Member="si_capasidad_tanque" ThisKey="id_capasidad" OtherKey="id_capasidad" Type="si_capasidad_tanque" IsForeignKey="true" />
+      <Association Name="si_marca_tanque_si_tanques" Member="si_marca_tanque" ThisKey="id_marca_tanque" OtherKey="id_marca_tanque" Type="si_marca_tanque" IsForeignKey="true" />
+      <Association Name="si_tipo_tanque_si_tanques" Member="si_tipo_tanque" ThisKey="id_tipo_tanque" OtherKey="id_tipo_tanque" Type="si_tipo_tanque" IsForeignKey="true" />
+      <Association Name="si_unidades_si_tanques" Member="si_unidades" ThisKey="id_unidad" OtherKey="id_unidad" Type="si_unidades" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_tecnicos" Member="si_tecnicos">
+    <Type Name="si_tecnicos">
+      <Column Name="id_tecnico" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tec_nombre" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="tec_fecha_registro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="tec_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_tipo_personal" Member="si_tipo_personal">
+    <Type Name="si_tipo_personal">
+      <Column Name="id_tipo_personal" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tp_tipo_personal" Type="System.String" DbType="NVarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="tp_estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="si_tipo_personal_si_personal" Member="si_personal" ThisKey="id_tipo_personal" OtherKey="id_tipo_personal" Type="si_personal" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_tipo_tanque" Member="si_tipo_tanque">
+    <Type Name="si_tipo_tanque">
+      <Column Name="id_tipo_tanque" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ttq_descripcion" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ttq_estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="si_tipo_tanque_si_tanques" Member="si_tanques" ThisKey="id_tipo_tanque" OtherKey="id_tipo_tanque" Type="si_tanques" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_tipos_cortesia" Member="si_tipos_cortesia">
+    <Type Name="si_tipos_cortesia">
+      <Column Name="id_tipo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(400)" CanBeNull="true" />
+      <Column Name="estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_tipos_cortesia_si_cortesias" Member="si_cortesias" ThisKey="id_tipo" OtherKey="id_tipo_cortesia" Type="si_cortesias" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_usuarios" Member="si_usuarios">
+    <Type Name="si_usuarios">
+      <Column Name="id_usuario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_rol" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="us_nombre" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="us_user" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="us_password" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="us_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="us_bloqueado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="us_ultimo_acceso" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="si_usuarios_si_bitacora" Member="si_bitacora" ThisKey="id_usuario" OtherKey="id_usuario" Type="si_bitacora" />
+      <Association Name="si_roles_si_usuarios" Member="si_roles" ThisKey="id_rol" OtherKey="id_rol" Type="si_roles" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_zonas" Member="si_zonas">
+    <Type Name="si_zonas">
+      <Column Name="id_zona" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_ciudad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cd_numero" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="cd_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="cd_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_zonas_si_dispositivos" Member="si_dispositivos" ThisKey="id_zona" OtherKey="id_zona" Type="si_dispositivos" />
+      <Association Name="si_zonas_si_estaciones" Member="si_estaciones" ThisKey="id_zona" OtherKey="id_zona" Type="si_estaciones" />
+      <Association Name="si_zonas_si_personal" Member="si_personal" ThisKey="id_zona" OtherKey="id_zona" Type="si_personal" />
+      <Association Name="si_zonas_si_empresas" Member="si_empresas" ThisKey="id_zona" OtherKey="id_zona" Type="si_empresas" />
+      <Association Name="si_ciudades_si_zonas" Member="si_ciudades" ThisKey="id_ciudad" OtherKey="id_ciudad" Type="si_ciudades" IsForeignKey="true" />
+      <Association Name="si_estados_si_zonas" Member="si_estados" ThisKey="id_estado" OtherKey="id_estado" Type="si_estados" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_estatus_mtto" Member="si_estatus_mttos">
+    <Type Name="si_estatus_mtto">
+      <Column Name="id_estatus" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="e_descripcion" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="si_estatus_mtto_si_mantenimineto" Member="si_mantenimineto" ThisKey="id_estatus" OtherKey="id_estatus" Type="si_mantenimineto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_lideres" Member="si_lideres1">
+    <Type Name="si_lidere">
+      <Column Name="id_lider" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="li_nombre" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="li_apellido" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="li_telefono" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="li_correo" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="li_comicion" Type="System.Decimal" DbType="Decimal(20,2)" CanBeNull="true" />
+      <Column Name="li_estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="si_lidere_si_unidades" Member="si_unidades" ThisKey="id_lider" OtherKey="id_lider" Type="si_unidades" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_modulos_estacion" Member="si_modulos_estacions">
+    <Type Name="si_modulos_estacion">
+      <Column Name="id_modulo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_estacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_estaciones_si_modulos_estacion" Member="si_estaciones" ThisKey="id_estacion" OtherKey="id_estacion" Type="si_estaciones" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_empresas" Member="si_empresas">
+    <Type Name="si_empresas">
+      <Column Name="id_empresa" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_zona" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="emp_nombre" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="emp_contacto" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="emp_telefono" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="emp_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="emp_direccion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="emp_lat" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="emp_lon" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="emp_correo" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="emp_autoconsumo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_empresas_si_facturacion" Member="si_facturacion" ThisKey="id_empresa" OtherKey="id_empresa" Type="si_facturacion" />
+      <Association Name="si_empresas_si_bases" Member="si_bases" ThisKey="id_empresa" OtherKey="id_empresa" Type="si_bases" />
+      <Association Name="si_empresas_si_unidades" Member="si_unidades" ThisKey="id_empresa" OtherKey="id_empresa" Type="si_unidades" />
+      <Association Name="si_zonas_si_empresas" Member="si_zonas" ThisKey="id_zona" OtherKey="id_zona" Type="si_zonas" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_giros" Member="si_giros">
+    <Type Name="si_giros">
+      <Column Name="id_giro" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="gi_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="gi_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gi_autoconsumo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="si_giros_si_unidades" Member="si_unidades" ThisKey="id_giro" OtherKey="id_giro" Type="si_unidades" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_bases" Member="si_bases">
+    <Type Name="si_bases">
+      <Column Name="id_base" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ba_direccion" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="id_empresa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ba_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_bases_si_comodatarios_bases" Member="si_comodatarios_bases" ThisKey="id_base" OtherKey="id_base" Type="si_comodatarios_bases" />
+      <Association Name="si_empresas_si_bases" Member="si_empresas" ThisKey="id_empresa" OtherKey="id_empresa" Type="si_empresas" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_comodatarios_bases" Member="si_comodatarios_bases">
+    <Type Name="si_comodatarios_bases">
+      <Column Name="id_comodatario_bases" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_comodatario" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_base" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_bases_si_comodatarios_bases" Member="si_bases" ThisKey="id_base" OtherKey="id_base" Type="si_bases" IsForeignKey="true" />
+      <Association Name="si_comodatarios_si_comodatarios_bases" Member="si_comodatarios" ThisKey="id_comodatario" OtherKey="id_comodatario" Type="si_comodatarios" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_comodatarios" Member="si_comodatarios">
+    <Type Name="si_comodatarios">
+      <Column Name="id_comodatario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="co_nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="co_telefono" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="co_correo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="co_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_comodatarios_si_comodatarios_bases" Member="si_comodatarios_bases" ThisKey="id_comodatario" OtherKey="id_comodatario" Type="si_comodatarios_bases" />
+      <Association Name="si_comodatarios_si_unidades" Member="si_unidades" ThisKey="id_comodatario" OtherKey="id_comodatario" Type="si_unidades" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_unidades" Member="si_unidades">
+    <Type Name="si_unidades">
+      <Column Name="id_unidad" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="un_numero_economico" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="id_comodatario" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="un_fecha_instalacion" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="un_estatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="un_codigo_barra" Type="System.String" DbType="NVarChar(600)" CanBeNull="true" />
+      <Column Name="un_telefono" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="un_direccion" Type="System.String" DbType="NVarChar(600)" CanBeNull="true" />
+      <Column Name="un_observacion" Type="System.String" DbType="NVarChar(800)" CanBeNull="true" />
+      <Column Name="un_anio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="un_placa" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="id_empresa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_giro" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_modelo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_cilindro" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_persona" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_lider" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_giro_autoservicio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="un_numero_serie" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="id_marca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_base" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="estatus_instalacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tiempo_mtto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tipo_tiempo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="si_unidades_si_kits" Member="si_kits" ThisKey="id_unidad" OtherKey="id_unidad" Type="si_kits" />
+      <Association Name="si_unidades_si_tanques" Member="si_tanques" ThisKey="id_unidad" OtherKey="id_unidad" Type="si_tanques" />
+      <Association Name="si_unidades_si_mantenimineto" Member="si_mantenimineto" ThisKey="id_unidad" OtherKey="id_unidad" Type="si_mantenimineto" />
+      <Association Name="si_unidades_si_ventas" Member="si_ventas" ThisKey="id_unidad" OtherKey="id_unidad" Type="si_ventas" />
+      <Association Name="si_unidades_si_cortesias" Member="si_cortesias" ThisKey="id_unidad" OtherKey="id_unidad" Type="si_cortesias" />
+      <Association Name="si_cilindros_si_unidades" Member="si_cilindros" ThisKey="id_cilindro" OtherKey="id_cilindro" Type="si_cilindros" IsForeignKey="true" />
+      <Association Name="si_empresas_si_unidades" Member="si_empresas" ThisKey="id_empresa" OtherKey="id_empresa" Type="si_empresas" IsForeignKey="true" />
+      <Association Name="si_giros_autoservicio_si_unidades" Member="si_giros_autoservicio" ThisKey="id_giro_autoservicio" OtherKey="id_giro_autoservicio" Type="si_giros_autoservicio" IsForeignKey="true" />
+      <Association Name="si_giros_si_unidades" Member="si_giros" ThisKey="id_giro" OtherKey="id_giro" Type="si_giros" IsForeignKey="true" />
+      <Association Name="si_lideres_si_unidades" Member="si_lideres" ThisKey="id_lider" OtherKey="id_lider" Type="si_lideres" IsForeignKey="true" />
+      <Association Name="si_lidere_si_unidades" Member="si_lidere" ThisKey="id_lider" OtherKey="id_lider" Type="si_lidere" IsForeignKey="true" />
+      <Association Name="si_modelos_si_unidades" Member="si_modelos" ThisKey="id_modelo" OtherKey="id_modelo" Type="si_modelos" IsForeignKey="true" />
+      <Association Name="si_personal_si_unidades" Member="si_personal" ThisKey="id_persona" OtherKey="id_persona" Type="si_personal" IsForeignKey="true" />
+      <Association Name="si_comodatarios_si_unidades" Member="si_comodatarios" ThisKey="id_comodatario" OtherKey="id_comodatario" Type="si_comodatarios" IsForeignKey="true" />
+      <Association Name="si_marcas_si_unidades" Member="si_marcas" ThisKey="id_marca" OtherKey="id_marca" Type="si_marcas" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_metodos_pago" Member="si_metodos_pago">
+    <Type Name="si_metodos_pago">
+      <Column Name="id_metodo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="me_descripcion" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="me_estatus" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="si_metodos_pago_si_ventas" Member="si_ventas" ThisKey="id_metodo" OtherKey="id_metodo" Type="si_ventas" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_mantenimineto" Member="si_mantenimineto">
+    <Type Name="si_mantenimineto">
+      <Column Name="id_mantenimiento" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="mtto_fecha_original" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="mtto_fecha_reprogramada" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="mtto_kilometraje" Type="System.Decimal" DbType="Decimal(20,0)" CanBeNull="true" />
+      <Column Name="id_persona" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mtto_estatus" Type="System.String" DbType="NVarChar(5)" CanBeNull="true" />
+      <Column Name="id_unidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="observacion" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="id_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mtto_tipo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mtto_bitacora" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="mtto_fecha_ultimo" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="mtto_refacciones" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="si_estatus_mtto_si_mantenimineto" Member="si_estatus_mtto" ThisKey="id_estatus" OtherKey="id_estatus" Type="si_estatus_mtto" IsForeignKey="true" />
+      <Association Name="si_personal_si_mantenimineto" Member="si_personal" ThisKey="id_persona" OtherKey="id_persona" Type="si_personal" IsForeignKey="true" />
+      <Association Name="si_unidades_si_mantenimineto" Member="si_unidades" ThisKey="id_unidad" OtherKey="id_unidad" Type="si_unidades" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_ventas" Member="si_ventas">
+    <Type Name="si_ventas">
+      <Column Name="id_venta" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_unidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_metodo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ve_kilometros" Type="System.UInt32" DbType="Int" CanBeNull="false" />
+      <Column Name="id_estacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_despachador" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ve_fecha_venta" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ve_cortesia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ve_cantidad_cortesia" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="ve_servicio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ve_litros" Type="System.Decimal" DbType="Int" CanBeNull="true" />
+      <Column Name="ve_total" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
+      <Column Name="ve_observacion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ve_medidor" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="ve_precio_gas" Type="System.Decimal" DbType="Decimal(10,4)" CanBeNull="true" />
+      <Association Name="si_estaciones_si_ventas" Member="si_estaciones" ThisKey="id_estacion" OtherKey="id_estacion" Type="si_estaciones" IsForeignKey="true" />
+      <Association Name="si_metodos_pago_si_ventas" Member="si_metodos_pago" ThisKey="id_metodo" OtherKey="id_metodo" Type="si_metodos_pago" IsForeignKey="true" />
+      <Association Name="si_unidades_si_ventas" Member="si_unidades" ThisKey="id_unidad" OtherKey="id_unidad" Type="si_unidades" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_cortesias" Member="si_cortesias">
+    <Type Name="si_cortesias">
+      <Column Name="id_cortesia" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_tipo_cortesia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_unidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cor_cantidad_cortesia" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="cor_codigo_cortesia" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="cor_fecha_cortesia_generada" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="cor_fecha_cortesia_aplicada" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="cor_estatus_cortesia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cor_autorizada" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cor_aplicada" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cor_quien_autoriza" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cor_quien_cancela" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cor_observacion" Type="System.String" DbType="VarChar(400)" CanBeNull="true" />
+      <Column Name="cor_fecha_cortesia_vencimiento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="id_estacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cor_libre" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="si_estaciones_si_cortesias" Member="si_estaciones" ThisKey="id_estacion" OtherKey="id_estacion" Type="si_estaciones" IsForeignKey="true" />
+      <Association Name="si_tipos_cortesia_si_cortesias" Member="si_tipos_cortesia" ThisKey="id_tipo_cortesia" OtherKey="id_tipo" Type="si_tipos_cortesia" IsForeignKey="true" />
+      <Association Name="si_unidades_si_cortesias" Member="si_unidades" ThisKey="id_unidad" OtherKey="id_unidad" Type="si_unidades" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_configuracion" Member="si_configuracion">
+    <Type Name="si_configuracion">
+      <Column Name="id_configuracion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="dia_corte_inicio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="dia_corte_fin" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="litros_cortesia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_tipo_tiempo" Member="si_tipo_tiempo">
+    <Type Name="si_tipo_tiempo">
+      <Column Name="id_tipoTiempo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.cambiosUnidades" Member="cambiosUnidades">
+    <Type Name="cambiosUnidades">
+      <Column Name="id_unidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="fecha_cambio" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="id_cambiosUnidades" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_tipo_refacciones" Member="si_tipo_refacciones">
+    <Type Name="si_tipo_refacciones">
+      <Column Name="id_refaccion" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tr_nombre" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="tr_estatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.si_comentarios_mantenimiento" Member="si_comentarios_mantenimiento">
+    <Type Name="si_comentarios_mantenimiento">
+      <Column Name="id_comentario" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="cm_usuario" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cm_fecha_comentario" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="cm_comentario" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="id_mantenimiento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SPServiciosXFecha" Method="SPServiciosXFecha">
+    <Parameter Name="fInicial" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="fFinal" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="estacion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="tipo" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="SPServiciosXFechaResult">
+      <Column Name="tVenta" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="unidad" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="despachador" Type="System.String" DbType="NVarChar(401)" CanBeNull="true" />
+      <Column Name="fechaVenta" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="fCortesia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cCortesia" Type="System.Decimal" DbType="Decimal(10,2)" CanBeNull="true" />
+      <Column Name="kilometraje" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="mPago" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="estacion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="medidor" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="nServicio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="litros" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="total" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPCortesias" Method="SPCortesias">
+    <Parameter Name="fInicial" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="fFinal" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="empresa" Type="System.Int32" DbType="Int" />
+    <Parameter Name="unidad" Type="System.String" DbType="VarChar(50)" />
+    <ElementType Name="SPCortesiasResult">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_tipo_cortesia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="folioCortesia" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="cortesia" Type="System.String" DbType="VarChar(400)" CanBeNull="true" />
+      <Column Name="id_unidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="unidad" Type="System.String" DbType="NVarChar(600)" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="id_estatus_cortesia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="observaciones" Type="System.String" DbType="VarChar(400)" CanBeNull="true" />
+      <Column Name="fecha_generada" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="fecha_aplicada" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="fecha_vencimiento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Auoriza" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sucursal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SucursalN" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="libre" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="Empresa" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPTRAERU" Method="SPTRAERU">
+    <Parameter Name="Empresa" Parameter="empresa" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="NContrato" Parameter="nContrato" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="NEconomico" Parameter="nEconomico" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="Comodatario" Parameter="comodatario" Type="System.String" DbType="VarChar(500)" />
+    <ElementType Name="SPTRAERUResult">
+      <Column Name="id_unidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_empresa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_comodatario" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="emp_nombre" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="un_codigo_barra" Type="System.String" DbType="NVarChar(600)" CanBeNull="true" />
+      <Column Name="un_numero_economico" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="co_nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="un_estatus" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPTRAERCOMODATARIOS" Method="SPTRAERCOMODATARIOS">
+    <Parameter Name="Nombre" Parameter="nombre" Type="System.String" DbType="VarChar(500)" />
+    <Parameter Name="telefono" Type="System.String" DbType="VarChar(15)" />
+    <ElementType Name="SPTRAERCOMODATARIOSResult1">
+      <Column Name="id_comodatario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="co_nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="co_telefono" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="co_correo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="co_estatus" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPServiciosR" Method="SPServiciosR">
+    <Parameter Name="sentencia" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SPServiciosXUnidad" Method="SPServiciosXUnidad">
+    <Parameter Name="fInicial" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="fFinal" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="unidad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="estacion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="modulo" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPServiciosXUnidadResult">
+      <Column Name="id_venta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_unidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="un_codigo_barra" Type="System.String" DbType="NVarChar(600)" CanBeNull="true" />
+      <Column Name="un_numero_economico" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ma_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="mod_descripcion" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="gi_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="un_placa" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="co_nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="emp_nombre" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="ve_fecha_venta" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ve_precio_gas" Type="System.Decimal" DbType="Decimal(10,4)" CanBeNull="true" />
+      <Column Name="ve_kilometros" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ve_servicio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ve_litros" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
+      <Column Name="ve_total" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
+      <Column Name="medidor" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="esta_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="Despachador" Type="System.String" DbType="NVarChar(401)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPCORTESIASAUTOM" Method="SPCORTESIASAUTOM">
+    <Parameter Name="fInicial" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="FFinal" Parameter="fFinal" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="litros" Type="System.Decimal" DbType="Decimal(18,0)" />
+    <ElementType Name="SPCORTESIASAUTOMResult">
+      <Column Name="id_unidad" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="un_codigo_barra" Type="System.String" DbType="NVarChar(600)" CanBeNull="true" />
+      <Column Name="volumen" Type="System.Decimal" DbType="Decimal(38,2)" CanBeNull="true" />
+      <Column Name="estacion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPServiciosXEmpresa" Method="SPServiciosXEmpresa">
+    <Parameter Name="fInicial" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="fFinal" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="empresa" Type="System.Int32" DbType="Int" />
+    <Parameter Name="comodatario" Type="System.Int32" DbType="Int" />
+    <Parameter Name="estacion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="modulo" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPServiciosXEmpresaResult">
+      <Column Name="id_venta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_unidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="un_codigo_barra" Type="System.String" DbType="NVarChar(600)" CanBeNull="true" />
+      <Column Name="un_numero_economico" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ma_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="mod_descripcion" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="un_anio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gi_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="un_placa" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="co_nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="emp_nombre" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="ve_fecha_venta" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ve_precio_gas" Type="System.Decimal" DbType="Decimal(10,4)" CanBeNull="true" />
+      <Column Name="ve_kilometros" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kil_anterior" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ve_servicio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ve_litros" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
+      <Column Name="ve_total" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
+      <Column Name="medidor" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="esta_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="Despachador" Type="System.String" DbType="NVarChar(401)" CanBeNull="true" />
+      <Column Name="litros_anterior" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SPServiciosXEmpresaAUTO" Method="SPServiciosXEmpresaAUTO">
+    <Parameter Name="fInicial" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="fFinal" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="empresa" Type="System.Int32" DbType="Int" />
+    <Parameter Name="comodatario" Type="System.Int32" DbType="Int" />
+    <Parameter Name="estacion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="modulo" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SPServiciosXEmpresaAUTOResult">
+      <Column Name="id_venta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_unidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="un_codigo_barra" Type="System.String" DbType="NVarChar(600)" CanBeNull="true" />
+      <Column Name="un_numero_economico" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="ma_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="mod_descripcion" Type="System.String" DbType="VarChar(300)" CanBeNull="true" />
+      <Column Name="un_anio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gi_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="un_placa" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="co_nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="emp_nombre" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="ve_fecha_venta" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ve_precio_gas" Type="System.Decimal" DbType="Decimal(10,4)" CanBeNull="true" />
+      <Column Name="ve_kilometros" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="kil_anterior" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ve_servicio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ve_litros" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
+      <Column Name="ve_total" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
+      <Column Name="medidor" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="esta_descripcion" Type="System.String" DbType="VarChar(800)" CanBeNull="true" />
+      <Column Name="Despachador" Type="System.String" DbType="NVarChar(401)" CanBeNull="true" />
+      <Column Name="litros_anterior" Type="System.Decimal" DbType="Decimal(12,2)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

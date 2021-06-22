@@ -1,0 +1,598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 22.75, 29.125" name="sicoveDB">
+  <DataContextMoniker Name="/sicoveDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8f014615-4712-4c7c-aeb9-60658d8b5aa8" absoluteBounds="10.625, 26.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_lideres" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8181da7f-b8c2-49e6-ba69-a98259480baf" absoluteBounds="10.64, 27.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="71ca4b5d-08cf-4602-b73f-c620d4927911" absoluteBounds="6.25, 5.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_bitacora" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1e80e2a-bbb3-43f8-9f80-3701d853152b" absoluteBounds="6.2650000005960464, 5.58500000089407, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="07def905-7a0b-48e2-bb9f-49a829c6c484" absoluteBounds="17.75, 9, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_capasidad_tanque" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c13cd80-cd2c-4a78-95a9-6f58c9924da6" absoluteBounds="17.765, 9.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="22b18698-15a5-40b8-aa56-7a72ee39967a" absoluteBounds="12, 6.875, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_cilindros" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d2dfb586-8331-4611-b662-55ee041f6be0" absoluteBounds="12.015, 7.3350000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="59e4b81e-b4e1-4d02-b50d-7ddd10ab7a80" absoluteBounds="3.5, 13.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_ciudades" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d10a26c4-75b8-4725-902c-3f4cef9efb4b" absoluteBounds="3.5150000000000006, 14.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f5abe4b2-ecad-4e86-8cce-540dbaf396cc" absoluteBounds="9, 10.375, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_dispositivos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1e56a4b3-83d2-413a-87da-312ee1f24854" absoluteBounds="9.015, 10.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1a6320e9-abac-41c0-8274-a078a3d4d51f" absoluteBounds="9, 13.125, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_estaciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0b70707b-8e67-4dfc-b828-b5b085cf1953" absoluteBounds="9.015, 13.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="65ee10bb-9ae6-45f0-baa1-a1a08f38b580" absoluteBounds="0.75, 13.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_estados" />
+      <nestedChildShapes>
+        <elementListCompartment Id="19852e72-47fd-4080-9b36-356a5a4adbde" absoluteBounds="0.76500000000000057, 14.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e21c8b66-10d8-4930-a866-ffe3038eb44d" absoluteBounds="11.75, 19.5, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_facturacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f60df37-2400-41aa-8987-1ca4c3a92c98" absoluteBounds="11.765, 19.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="247f16e4-97cd-4ae9-8329-bd55993963fc" absoluteBounds="12, 4.125, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_giros_autoservicio" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27d4894f-19e9-4ab6-8be2-34d459d1a7d4" absoluteBounds="12.015, 4.5850000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="89c59890-5b5a-411b-acde-0a2d443ed6d0" absoluteBounds="20.5, 14.5, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_kits" />
+      <nestedChildShapes>
+        <elementListCompartment Id="331aab95-b7ba-4dae-b243-7753d2afc89e" absoluteBounds="20.515, 14.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2fe18715-8c45-4ff5-8975-d3165e441ee3" absoluteBounds="17.75, 6.125, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_marca_tanque" />
+      <nestedChildShapes>
+        <elementListCompartment Id="099f1a9f-fe26-4bdb-b472-bf6a6a978906" absoluteBounds="17.765, 6.5850000000000009, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e0f6ad48-b25e-48fb-bff8-6f8d65ada126" absoluteBounds="9.25, 23.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_marcas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="860c1fa6-4387-431a-a7a6-cc7ec013bb0e" absoluteBounds="9.265, 23.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ebebaf85-7c32-42c0-b414-6bafdd3456c5" absoluteBounds="15, 23.125, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_marcas_kit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7f7924cc-f517-451a-b9de-49849a93673d" absoluteBounds="15.015, 23.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3a9f8fd5-b930-4485-ab02-98ec8d496527" absoluteBounds="12, 23.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_modelos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="103d5a15-d961-4820-a5a9-cec1b9977683" absoluteBounds="12.015, 23.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4ecefb75-07c3-4e8f-b610-a30e2cb094e7" absoluteBounds="17.75, 23, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_modelos_kit" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b4d4b031-c473-4b66-9886-cd9f29948d90" absoluteBounds="17.765, 23.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="468937cd-1cf5-49a5-83ee-4af9e2d78d92" absoluteBounds="0.75, 1, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_modulos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7ceef704-80c8-4962-9d08-8b44ad2638d0" absoluteBounds="0.76500000059604645, 1.4600000008940697, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2d0f4ae9-878d-48cd-8425-9d5b80aad62b" absoluteBounds="3.5, 1.375, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_permisos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3802b7f2-ba3e-43ec-bde8-4a8761f3216e" absoluteBounds="3.5150000005960464, 1.8350000008940697, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="60e96a84-cb39-4b5b-88f2-4250e57b7121" absoluteBounds="12, 9.5, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_personal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0cf9d628-2180-4b9b-baa0-cedbdd9c2020" absoluteBounds="12.015, 9.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="52056ab6-e077-4702-baf8-3df7d6b7da24" absoluteBounds="0.75, 5.5, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_roles" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bb0235fe-ef4d-47de-b5fc-66298d350967" absoluteBounds="0.76500000059604645, 5.96000000089407, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="14266065-56ea-4f96-93d6-12de313dfa13" absoluteBounds="20.5, 10.5, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_tanques" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d125643-fb04-458e-b0ec-9fe643248782" absoluteBounds="20.515, 10.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="baf85a57-8981-4222-a7e5-fb6fd905d544" absoluteBounds="6.75, 0.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_tecnicos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="789c5999-e5b1-42a5-836e-1a3614797bd1" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="614d8846-da7a-4297-85c0-2a927a12a11c" absoluteBounds="9.25, 8, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_tipo_personal" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6454d49f-7271-47eb-a4fd-795ace2ac442" absoluteBounds="9.265, 8.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="691bb5bb-9637-4388-9768-1683943c81d3" absoluteBounds="17.75, 20.25, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_tipo_tanque" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5395d341-6b01-4461-a22c-7d38e3de1589" absoluteBounds="17.765, 20.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ed72cc79-99c8-4474-a079-bf6bba918a79" absoluteBounds="14.75, 19.125, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_tipos_cortesia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae3c774b-6a0e-4ce9-a7e3-ec77ba1758ca" absoluteBounds="14.765, 19.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f4fcbd3f-7757-4d38-baba-b7b66f03f27c" absoluteBounds="3.5, 5, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_usuarios" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a756b908-195a-4784-b75c-5fa0d97ae04b" absoluteBounds="3.5150000005960464, 5.46000000089407, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="24e8c0e9-48ee-4253-9c5b-7b6477b6ab4d" absoluteBounds="6.25, 13.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_zonas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="baa08d93-9182-41e2-9774-6d8ae5892578" absoluteBounds="6.2650000000000006, 14.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 14.6642976888021); (3.5 : 14.6642976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_estados/si_estados_si_ciudades" />
+      <nodes>
+        <classShapeMoniker Id="65ee10bb-9ae6-45f0-baa1-a1a08f38b580" />
+        <classShapeMoniker Id="59e4b81e-b4e1-4d02-b50d-7ddd10ab7a80" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 8.2612939453125); (14.375 : 8.6362939453125); (16.7760366666667 : 8.6362939453125 : JumpStart); (17.0559870833333 : 8.6362939453125 : JumpEnd); (20.125 : 8.6362939453125); (20.125 : 14.1234625384615); (20.1910744349011 : 14.1895369733626 : JumpStart); (20.3089255650989 : 14.3073881035604 : JumpEnd); (20.5015374615385 : 14.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_cilindros/si_cilindros_si_kits" />
+      <nodes>
+        <classShapeMoniker Id="22b18698-15a5-40b8-aa56-7a72ee39967a" />
+        <classShapeMoniker Id="89c59890-5b5a-411b-acde-0a2d443ed6d0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 24.0392976888021); (11.3541666666667 : 24.0392976888021 : JumpStart); (11.5208333333333 : 24.0392976888021 : JumpEnd); (12 : 24.0392976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_marcas/si_marcas_si_modelos" />
+      <nodes>
+        <classShapeMoniker Id="e0f6ad48-b25e-48fb-bff8-6f8d65ada126" />
+        <classShapeMoniker Id="3a9f8fd5-b930-4485-ab02-98ec8d496527" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.75 : 23.7892976888021); (21.40625 : 23.7892976888021); (21.40625 : 17.0401025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_modelos_kit/si_modelos_kit_si_kits" />
+      <nodes>
+        <classShapeMoniker Id="4ecefb75-07c3-4e8f-b610-a30e2cb094e7" />
+        <classShapeMoniker Id="89c59890-5b5a-411b-acde-0a2d443ed6d0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 23.8181469726563); (17.75 : 23.8181469726563)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_marcas_kit/si_marcas_kit_si_modelos_kit" />
+      <nodes>
+        <classShapeMoniker Id="ebebaf85-7c32-42c0-b414-6bafdd3456c5" />
+        <classShapeMoniker Id="4ecefb75-07c3-4e8f-b610-a30e2cb094e7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.45923076923077 : 3.5401025390625); (1.45923076923077 : 3.7901025390625); (2.05461538461538 : 3.7901025390625); (2.05461538461538 : 3.5401025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_modulos/si_modulos_si_modulos" />
+      <nodes>
+        <classShapeMoniker Id="468937cd-1cf5-49a5-83ee-4af9e2d78d92" />
+        <classShapeMoniker Id="468937cd-1cf5-49a5-83ee-4af9e2d78d92" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.16429768880208); (3.5 : 2.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_modulos/si_modulos_si_permisos" />
+      <nodes>
+        <classShapeMoniker Id="468937cd-1cf5-49a5-83ee-4af9e2d78d92" />
+        <classShapeMoniker Id="2d0f4ae9-878d-48cd-8425-9d5b80aad62b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 5.5); (3.125 : 5.125); (3.125 : 2.59019853320312); (3.5 : 2.59019853320312)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_roles/si_roles_si_permisos" />
+      <nodes>
+        <classShapeMoniker Id="52056ab6-e077-4702-baf8-3df7d6b7da24" />
+        <classShapeMoniker Id="2d0f4ae9-878d-48cd-8425-9d5b80aad62b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.75 : 9.69314697265625); (21.5 : 9.69314697265625); (21.5 : 10.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_capasidad_tanque/si_capasidad_tanque_si_tanques" />
+      <nodes>
+        <classShapeMoniker Id="07def905-7a0b-48e2-bb9f-49a829c6c484" />
+        <classShapeMoniker Id="14266065-56ea-4f96-93d6-12de313dfa13" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.75 : 6.81814697265625); (20.9687475 : 6.81814697265625); (20.9687475 : 10.5)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_marca_tanque/si_marca_tanque_si_tanques" />
+      <nodes>
+        <classShapeMoniker Id="2fe18715-8c45-4ff5-8975-d3165e441ee3" />
+        <classShapeMoniker Id="14266065-56ea-4f96-93d6-12de313dfa13" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.15625 : 9.3862939453125); (11.15625 : 10.2844555664062); (12 : 10.2844555664062)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_tipo_personal/si_tipo_personal_si_personal" />
+      <nodes>
+        <classShapeMoniker Id="614d8846-da7a-4297-85c0-2a927a12a11c" />
+        <classShapeMoniker Id="60e96a84-cb39-4b5b-88f2-4250e57b7121" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(19.75 : 20.9431469726563); (20.375 : 20.9431469726563); (20.375 : 16); (20.25 : 16); (20.25 : 13.4151025390625); (21.5 : 13.4151025390625); (21.5 : 13.0401025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_tipo_tanque/si_tipo_tanque_si_tanques" />
+      <nodes>
+        <classShapeMoniker Id="691bb5bb-9637-4388-9768-1683943c81d3" />
+        <classShapeMoniker Id="14266065-56ea-4f96-93d6-12de313dfa13" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.20274983723958); (6.25 : 6.20274983723958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_usuarios/si_usuarios_si_bitacora" />
+      <nodes>
+        <classShapeMoniker Id="f4fcbd3f-7757-4d38-baba-b7b66f03f27c" />
+        <classShapeMoniker Id="71ca4b5d-08cf-4602-b73f-c620d4927911" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.22439947265625); (3.5 : 6.22439947265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_roles/si_roles_si_usuarios" />
+      <nodes>
+        <classShapeMoniker Id="52056ab6-e077-4702-baf8-3df7d6b7da24" />
+        <classShapeMoniker Id="f4fcbd3f-7757-4d38-baba-b7b66f03f27c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.65625 : 13.75); (6.65625 : 11.9848046875); (9 : 11.9848046875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_zonas/si_zonas_si_dispositivos" />
+      <nodes>
+        <classShapeMoniker Id="24e8c0e9-48ee-4253-9c5b-7b6477b6ab4d" />
+        <classShapeMoniker Id="f5abe4b2-ecad-4e86-8cce-540dbaf396cc" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 14.6114005533854); (9 : 14.6114005533854)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_zonas/si_zonas_si_estaciones" />
+      <nodes>
+        <classShapeMoniker Id="24e8c0e9-48ee-4253-9c5b-7b6477b6ab4d" />
+        <classShapeMoniker Id="1a6320e9-abac-41c0-8274-a078a3d4d51f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 15.6349049223584); (13.912109375 : 15.6349049223584); (13.912109375 : 11.8478011067708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_zonas/si_zonas_si_personal" />
+      <nodes>
+        <classShapeMoniker Id="24e8c0e9-48ee-4253-9c5b-7b6477b6ab4d" />
+        <classShapeMoniker Id="60e96a84-cb39-4b5b-88f2-4250e57b7121" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 14.6354484049479); (6.25 : 14.6354484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_ciudades/si_ciudades_si_zonas" />
+      <nodes>
+        <classShapeMoniker Id="59e4b81e-b4e1-4d02-b50d-7ddd10ab7a80" />
+        <classShapeMoniker Id="24e8c0e9-48ee-4253-9c5b-7b6477b6ab4d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 15.4535953776042); (3.125 : 15.8285953776042); (3.125 : 16.0881982421875); (5.875 : 16.0881982421875); (6.25 : 15.7131982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_estados/si_estados_si_zonas" />
+      <nodes>
+        <classShapeMoniker Id="65ee10bb-9ae6-45f0-baa1-a1a08f38b580" />
+        <classShapeMoniker Id="24e8c0e9-48ee-4253-9c5b-7b6477b6ab4d" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="398a076c-e638-4f8e-920a-955323c2c0aa" absoluteBounds="14.75, 11.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_estatus_mtto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5060aa99-c23f-4368-a4d0-bfe802ef9e6e" absoluteBounds="14.765, 11.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c3fb053b-b40d-449f-93b7-bb6bc6b91f6d" absoluteBounds="12.75, 26.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_lidere" />
+      <nestedChildShapes>
+        <elementListCompartment Id="edac5cb1-57b3-4963-8062-3e0dc679bfe0" absoluteBounds="12.765, 27.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e289c20-0216-409b-a7ce-d2782bc6f391" absoluteBounds="11.75, 13.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_modulos_estacion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="edabfea8-2643-4835-ad85-4966eb559054" absoluteBounds="11.765, 13.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11 : 14.2892976888021); (11.75 : 14.2892976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_estaciones/si_estaciones_si_modulos_estacion" />
+      <nodes>
+        <classShapeMoniker Id="1a6320e9-abac-41c0-8274-a078a3d4d51f" />
+        <classShapeMoniker Id="9e289c20-0216-409b-a7ce-d2782bc6f391" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0e5b86fd-79f5-44cd-9372-e0f3ee043e58" absoluteBounds="8.75, 19.5, 2, 2.9247054036458331">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_empresas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b6c1f54c-1506-4d1c-9bf4-ed954dd27716" absoluteBounds="8.765, 19.96, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.75 : 21.0953597005208); (11.0729166666667 : 21.0953597005208 : JumpStart); (11.2395833333333 : 21.0953597005208 : JumpEnd); (11.3541666666667 : 21.0953597005208 : JumpStart); (11.5208333333333 : 21.0953597005208 : JumpEnd); (11.75 : 21.0953597005208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_empresas/si_empresas_si_facturacion" />
+      <nodes>
+        <classShapeMoniker Id="0e5b86fd-79f5-44cd-9372-e0f3ee043e58" />
+        <classShapeMoniker Id="e21c8b66-10d8-4930-a866-ffe3038eb44d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.90625 : 15.7131982421875); (7.90625 : 21.845400390625); (8.75 : 21.845400390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_zonas/si_zonas_si_empresas" />
+      <nodes>
+        <classShapeMoniker Id="24e8c0e9-48ee-4253-9c5b-7b6477b6ab4d" />
+        <classShapeMoniker Id="0e5b86fd-79f5-44cd-9372-e0f3ee043e58" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="f807abcc-3438-4c11-a9c7-85c86c0f8b2f" absoluteBounds="11.625, 16.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_giros" />
+      <nestedChildShapes>
+        <elementListCompartment Id="863efca4-3c9b-49a4-bddc-4e5a7a4d696b" absoluteBounds="11.64, 17.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a77cb2c-fe12-426f-8458-e0f24fc093c5" absoluteBounds="5, 19.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_bases" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f2e96e26-2bda-433f-9f98-0c388b1f8003" absoluteBounds="5.0150000000000006, 20.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.75 : 20.4142976888021); (7 : 20.4142976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_empresas/si_empresas_si_bases" />
+      <nodes>
+        <classShapeMoniker Id="0e5b86fd-79f5-44cd-9372-e0f3ee043e58" />
+        <classShapeMoniker Id="9a77cb2c-fe12-426f-8458-e0f24fc093c5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="6e396b9f-28b9-448b-b807-cda0dcc886cf" absoluteBounds="2.75, 17.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_comodatarios_bases" />
+      <nestedChildShapes>
+        <elementListCompartment Id="950be4e4-7c8a-4480-97c8-c478a985d8b5" absoluteBounds="2.765, 17.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.21875 : 19.625); (5.21875 : 18.7973453776042); (4.75 : 18.7973453776042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_bases/si_bases_si_comodatarios_bases" />
+      <nodes>
+        <classShapeMoniker Id="9a77cb2c-fe12-426f-8458-e0f24fc093c5" />
+        <classShapeMoniker Id="6e396b9f-28b9-448b-b807-cda0dcc886cf" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="638f812b-fa54-4d88-bcef-3c0005798645" absoluteBounds="5.5, 16.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_comodatarios" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d9a3d14-5235-4464-8e4a-5ae2de5adafe" absoluteBounds="5.515, 17.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 18.0729484049479); (4.75 : 18.0729484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_comodatarios/si_comodatarios_si_comodatarios_bases" />
+      <nodes>
+        <classShapeMoniker Id="638f812b-fa54-4d88-bcef-3c0005798645" />
+        <classShapeMoniker Id="6e396b9f-28b9-448b-b807-cda0dcc886cf" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" absoluteBounds="15.25, 13.75, 2, 5.4246240234375023">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_unidades" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0373933d-c2bc-4eca-90cd-cb3eac82a5af" absoluteBounds="15.265, 14.21, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(17.25 : 16.15625); (19.0416666666667 : 16.15625 : JumpStart); (19.2083333333333 : 16.15625 : JumpEnd); (20.2916666666667 : 16.15625 : JumpStart); (20.4583333333333 : 16.15625 : JumpEnd); (20.5 : 16.15625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_unidades/si_unidades_si_kits" />
+      <nodes>
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+        <classShapeMoniker Id="89c59890-5b5a-411b-acde-0a2d443ed6d0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.0859375 : 13.75); (17.0859375 : 10.78125); (20.0416666666667 : 10.78125 : JumpStart); (20.2083333333333 : 10.78125 : JumpEnd); (20.5 : 10.78125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_unidades/si_unidades_si_tanques" />
+      <nodes>
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+        <classShapeMoniker Id="14266065-56ea-4f96-93d6-12de313dfa13" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 7.53689447265625); (14.2916666666667 : 7.53689447265625 : JumpStart); (14.4583333333333 : 7.53689447265625 : JumpEnd); (16.7760366666667 : 7.53689447265625 : JumpStart); (16.9427033333333 : 7.53689447265625 : JumpEnd); (16.97265375 : 7.53689447265625); (16.97265375 : 13.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_cilindros/si_cilindros_si_unidades" />
+      <nodes>
+        <classShapeMoniker Id="22b18698-15a5-40b8-aa56-7a72ee39967a" />
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 22.0076496809896); (11.0729166666667 : 22.0076496809896 : JumpStart); (11.2395833333333 : 22.0076496809896 : JumpEnd); (11.3541666666667 : 22.0076496809896 : JumpStart); (11.5208333333333 : 22.0076496809896 : JumpEnd); (13.7994791666667 : 22.0076496809896 : JumpStart); (13.9661458333333 : 22.0076496809896 : JumpEnd); (14.2916666666667 : 22.0076496809896 : JumpStart); (14.4583333333333 : 22.0076496809896 : JumpEnd); (17.03125 : 22.0076496809896); (17.03125 : 19.1746240234375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_empresas/si_empresas_si_unidades" />
+      <nodes>
+        <classShapeMoniker Id="0e5b86fd-79f5-44cd-9372-e0f3ee043e58" />
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14 : 5.5112939453125); (14.375 : 5.8862939453125); (14.375 : 17.1017976888021); (15.25 : 17.1017976888021)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_giros_autoservicio/si_giros_autoservicio_si_unidades" />
+      <nodes>
+        <classShapeMoniker Id="247f16e4-97cd-4ae9-8329-bd55993963fc" />
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.625 : 17.5392976888021); (13.7994791666667 : 17.5392976888021 : JumpStart); (14.0247395833333 : 17.5392976888021 : JumpEnd); (15.25 : 17.5392976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_giros/si_giros_si_unidades" />
+      <nodes>
+        <classShapeMoniker Id="f807abcc-3438-4c11-a9c7-85c86c0f8b2f" />
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.4375 : 26.625); (11.4375 : 18.7267976888021); (13.7994791666667 : 18.7267976888021 : JumpStart); (13.9661458333333 : 18.7267976888021 : JumpEnd); (14.2916666666667 : 18.7267976888021 : JumpStart); (14.4583333333333 : 18.7267976888021 : JumpEnd); (15.25 : 18.7267976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_lideres/si_lideres_si_unidades" />
+      <nodes>
+        <classShapeMoniker Id="8f014615-4712-4c7c-aeb9-60658d8b5aa8" />
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.375 : 26.75); (14.375 : 18.3840543652948); (15.25 : 18.3840543652948)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_lidere/si_lidere_si_unidades" />
+      <nodes>
+        <classShapeMoniker Id="c3fb053b-b40d-449f-93b7-bb6bc6b91f6d" />
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.8828125 : 23.25); (13.8828125 : 14.4455481888021); (14.2916666666667 : 14.4455481888021 : JumpStart); (14.4583333333333 : 14.4455481888021 : JumpEnd); (15.25 : 14.4455481888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_modelos/si_modelos_si_unidades" />
+      <nodes>
+        <classShapeMoniker Id="3a9f8fd5-b930-4485-ab02-98ec8d496527" />
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.94140625 : 11.8478011067708); (13.94140625 : 17.6431037305896); (15.25 : 17.6431037305896)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_personal/si_personal_si_unidades" />
+      <nodes>
+        <classShapeMoniker Id="60e96a84-cb39-4b5b-88f2-4250e57b7121" />
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.5 : 18.51849609375); (7.82291666666667 : 18.51849609375 : JumpStart); (7.98958333333333 : 18.51849609375 : JumpEnd); (11.0729166666667 : 18.51849609375 : JumpStart); (11.2395833333333 : 18.51849609375 : JumpEnd); (13.7994791666667 : 18.51849609375 : JumpStart); (13.9661458333333 : 18.51849609375 : JumpEnd); (14.2916666666667 : 18.51849609375 : JumpStart); (14.4583333333333 : 18.51849609375 : JumpEnd); (15.25 : 18.51849609375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_comodatarios/si_comodatarios_si_unidades" />
+      <nodes>
+        <classShapeMoniker Id="638f812b-fa54-4d88-bcef-3c0005798645" />
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.15625 : 23.25); (11.15625 : 16.1612024611792); (13.7994791666667 : 16.1612024611792 : JumpStart); (14.0247395833333 : 16.1612024611792 : JumpEnd); (14.2916666666667 : 16.1612024611792 : JumpStart); (14.4583333333333 : 16.1612024611792 : JumpEnd); (15.25 : 16.1612024611792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_marcas/si_marcas_si_unidades" />
+      <nodes>
+        <classShapeMoniker Id="e0f6ad48-b25e-48fb-bff8-6f8d65ada126" />
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="c3a97725-8d23-47ca-9cfa-37f6a35d9b2b" absoluteBounds="5.875, 3.25, 2, 1.3862939453125">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_metodos_pago" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f49e0290-ed7b-4c59-9127-5456b95d5a71" absoluteBounds="5.89, 3.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="74a91939-dddb-4de7-a77a-51a55a705953" absoluteBounds="17.625, 12.625, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_mantenimineto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="069739e1-f5f1-499a-b794-9519f5743b30" absoluteBounds="17.64, 13.085, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(16.75 : 11.7219962565104); (16.7760366666667 : 11.7219962565104 : JumpStart); (17.1692708333333 : 11.7219962565104 : JumpEnd); (18.625 : 11.7219962565104); (18.625 : 12.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_estatus_mtto/si_estatus_mtto_si_mantenimineto" />
+      <nodes>
+        <classShapeMoniker Id="398a076c-e638-4f8e-920a-955323c2c0aa" />
+        <classShapeMoniker Id="74a91939-dddb-4de7-a77a-51a55a705953" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(13.84765625 : 11.8478011067708); (13.84765625 : 13.03125); (13.8580729166667 : 13.03125 : JumpStart); (14.0247395833333 : 13.03125 : JumpEnd); (14.2916666666667 : 13.03125 : JumpStart); (14.4583333333333 : 13.03125 : JumpEnd); (16.7760366666667 : 13.03125 : JumpStart); (17.1692708333333 : 13.03125 : JumpEnd); (17.625 : 13.03125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_personal/si_personal_si_mantenimineto" />
+      <nodes>
+        <classShapeMoniker Id="60e96a84-cb39-4b5b-88f2-4250e57b7121" />
+        <classShapeMoniker Id="74a91939-dddb-4de7-a77a-51a55a705953" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.25 : 14.8421541341146); (17.625 : 14.8421541341146)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_unidades/si_unidades_si_mantenimineto" />
+      <nodes>
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+        <classShapeMoniker Id="74a91939-dddb-4de7-a77a-51a55a705953" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="345004cb-22f5-4359-9a90-a3834f859fb5" absoluteBounds="9.25, 4.125, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_ventas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aa835aa3-08d0-47c4-9374-7540e6f0b06b" absoluteBounds="9.265, 4.585, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10 : 13.125); (10 : 12.5881982421875); (11.5 : 12.5881982421875); (11.5 : 5.97195556640625); (11.25 : 5.97195556640625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_estaciones/si_estaciones_si_ventas" />
+      <nodes>
+        <classShapeMoniker Id="1a6320e9-abac-41c0-8274-a078a3d4d51f" />
+        <classShapeMoniker Id="345004cb-22f5-4359-9a90-a3834f859fb5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.875 : 4.38064697265625); (9.25 : 4.38064697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_metodos_pago/si_metodos_pago_si_ventas" />
+      <nodes>
+        <classShapeMoniker Id="c3a97725-8d23-47ca-9cfa-37f6a35d9b2b" />
+        <classShapeMoniker Id="345004cb-22f5-4359-9a90-a3834f859fb5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.85937 : 13.75); (16.85937 : 6.42348028320312); (14.4583333333333 : 6.42348028320312 : JumpStart); (14.2916666666667 : 6.42348028320312 : JumpEnd); (11.5833333333333 : 6.42348028320312 : JumpStart); (11.4166666666667 : 6.42348028320312 : JumpEnd); (11.25 : 6.42348028320312)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_unidades/si_unidades_si_ventas" />
+      <nodes>
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+        <classShapeMoniker Id="345004cb-22f5-4359-9a90-a3834f859fb5" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="b4ff36f8-c125-4029-a1a0-e21fb3e94af4" absoluteBounds="18.125, 16.25, 2, 3.88621256510417">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_cortesias" />
+      <nestedChildShapes>
+        <elementListCompartment Id="11ea34dd-b9a1-40c9-a099-81bcb13c0af4" absoluteBounds="18.14, 16.71, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(11 : 14.2989005533854); (11.6875 : 14.2989005533854); (11.6875 : 15.1410953776042); (13.7994791666667 : 15.1410953776042 : JumpStart); (14.0247395833333 : 15.1410953776042 : JumpEnd); (14.2916666666667 : 15.1410953776042 : JumpStart); (14.4583333333333 : 15.1410953776042 : JumpEnd); (15.1875 : 15.1410953776042); (15.1875 : 13.6875); (17.5625 : 13.6875); (17.5625 : 15.9968082682292); (19.125 : 15.9968082682292); (19.125 : 16.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_estaciones/si_estaciones_si_cortesias" />
+      <nodes>
+        <classShapeMoniker Id="1a6320e9-abac-41c0-8274-a078a3d4d51f" />
+        <classShapeMoniker Id="b4ff36f8-c125-4029-a1a0-e21fb3e94af4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(16.75 : 19.6866682942708); (18.125 : 19.6866682942708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_tipos_cortesia/si_tipos_cortesia_si_cortesias" />
+      <nodes>
+        <classShapeMoniker Id="ed72cc79-99c8-4474-a079-bf6bba918a79" />
+        <classShapeMoniker Id="b4ff36f8-c125-4029-a1a0-e21fb3e94af4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17.25 : 17.7123120117188); (18.125 : 17.7123120117188)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/sicoveDBDataContext/si_unidades/si_unidades_si_cortesias" />
+      <nodes>
+        <classShapeMoniker Id="ded7b4a0-6743-4d1b-bf8f-0b6ab13b908c" />
+        <classShapeMoniker Id="b4ff36f8-c125-4029-a1a0-e21fb3e94af4" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="94c3ae14-79a7-426c-8754-b43367ec5628" absoluteBounds="10.25, 1.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_configuracion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59a4cfd6-2328-4ef7-ae30-b48053acbd7c" absoluteBounds="10.265, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ab3860fa-da95-49c6-9a85-f5f47b5c656b" absoluteBounds="6.75, 25.875, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_tipo_tiempo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a7d44941-b95b-4ce1-b447-c49beb27a507" absoluteBounds="6.7650000000000006, 26.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e964e8a8-2499-4194-87eb-9e9d7baf6c32" absoluteBounds="8, 2.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/sicoveDBDataContext/cambiosUnidades" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b8687eac-f438-4979-a789-cca4a3e4aa7f" absoluteBounds="8.015, 2.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="14c791b0-28e4-47d1-ad9f-e397acd21b39" absoluteBounds="12.75, 0.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_tipo_refacciones" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e7470a90-4581-4ab7-a180-16061746b790" absoluteBounds="12.765, 0.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2c9bef64-428d-4cc3-9509-1a7b6b9cc639" absoluteBounds="13, 2.25, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/sicoveDBDataContext/si_comentarios_mantenimiento" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f948c006-8f36-4c81-9e7c-5974571e8b90" absoluteBounds="13.015, 2.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

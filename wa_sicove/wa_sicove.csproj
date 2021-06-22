@@ -1,0 +1,973 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32CDA7EA-CE51-4405-94C4-A995B4BB94F7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>wa_sicove</RootNamespace>
+    <AssemblyName>wa_sicove</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\js\barcoder\jquery-barcode.js" />
+    <Content Include="assets\js\barcoder\jquery-barcode.min.js" />
+    <Content Include="assets\js\barcoder\JsBarcode.code128.min.js" />
+    <Content Include="assets\js\bootstrap\bootstrap.js" />
+    <Content Include="assets\js\global-styles\global-styles.js" />
+    <Content Include="assets\js\jquery-ui\jquery-ui-1.10.4.custom.min.js" />
+    <Content Include="assets\js\jquery.blockUI.js" />
+    <Content Include="assets\js\jquery\jquery-2.1.0.min.js" />
+    <Content Include="assets\js\jszip.min.js" />
+    <Content Include="assets\js\king-chart-stat-transparent.js" />
+    <Content Include="assets\js\king-chart-stat.js" />
+    <Content Include="assets\js\king-common.js" />
+    <Content Include="assets\js\king-components-transparent.js" />
+    <Content Include="assets\js\king-components.js" />
+    <Content Include="assets\js\king-elements.js" />
+    <Content Include="assets\js\king-form-layouts.js" />
+    <Content Include="assets\js\king-page-transparent.js" />
+    <Content Include="assets\js\king-page.js" />
+    <Content Include="assets\js\king-table.js" />
+    <Content Include="assets\js\plugins\bootstrap-colorpicker\bootstrap-colorpicker.min.js" />
+    <Content Include="assets\js\plugins\bootstrap-contextmenu\bootstrap-contextmenu.js" />
+    <Content Include="assets\js\plugins\bootstrap-datepicker\bootstrap-datepicker.js" />
+    <Content Include="assets\js\plugins\bootstrap-editable\address.custom.js" />
+    <Content Include="assets\js\plugins\bootstrap-editable\bootstrap-editable.min.js" />
+    <Content Include="assets\js\plugins\bootstrap-editable\demo-mock.js" />
+    <Content Include="assets\js\plugins\bootstrap-editable\jquery.mockjax.min.js" />
+    <Content Include="assets\js\plugins\bootstrap-multiselect\bootstrap-multiselect.js" />
+    <Content Include="assets\js\plugins\bootstrap-progressbar\bootstrap-progressbar.js" />
+    <Content Include="assets\js\plugins\bootstrap-progressbar\bootstrap-progressbar.min.js" />
+    <Content Include="assets\js\plugins\bootstrap-slider\bootstrap-slider.js" />
+    <Content Include="assets\js\plugins\bootstrap-switch\bootstrap-switch.min.js" />
+    <Content Include="assets\js\plugins\bootstrap-tagsinput\bootstrap-tagsinput.min.js" />
+    <Content Include="assets\js\plugins\bootstrap-touchspin\jquery.bootstrap-touchspin.js" />
+    <Content Include="assets\js\plugins\bootstrap-tour\bootstrap-tour.custom.js" />
+    <Content Include="assets\js\plugins\buttons-html5\buttons.html5.min.js" />
+    <Content Include="assets\js\plugins\datatable\buttons.flash.min.js" />
+    <Content Include="assets\js\plugins\datatable\dataTables.bootstrap.js" />
+    <Content Include="assets\js\plugins\datatable\dataTables.buttons.min.js" />
+    <Content Include="assets\js\plugins\datatable\dataTables.responsive.min.js" />
+    <Content Include="assets\js\plugins\datatable\exts\dataTables.colReorder.min.js" />
+    <Content Include="assets\js\plugins\datatable\exts\dataTables.colVis.bootstrap.js" />
+    <Content Include="assets\js\plugins\datatable\exts\dataTables.tableTools.min.js" />
+    <Content Include="assets\js\plugins\datatable\jquery.dataTables.min.js" />
+    <Content Include="assets\js\plugins\datatable\plugins\sorting\date-uk.js" />
+    <Content Include="assets\js\plugins\datatable\plugins\sorting\file-size.js" />
+    <Content Include="assets\js\plugins\datatable\plugins\type-detection\date-uk.js" />
+    <Content Include="assets\js\plugins\datatable\plugins\type-detection\file-size.js" />
+    <Content Include="assets\js\plugins\daterangepicker\daterangepicker.js" />
+    <Content Include="assets\js\plugins\dropzone\dropzone.min.js" />
+    <Content Include="assets\js\plugins\FileSaver\FileSaver.min.js" />
+    <Content Include="assets\js\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="assets\js\plugins\google-map\google-map.js" />
+    <Content Include="assets\js\plugins\html2canvas\html2canvas.min.js" />
+    <Content Include="assets\js\plugins\jqallrangesliders\jQAllRangeSliders-min.js" />
+    <Content Include="assets\js\plugins\jqgrid\i18n\grid.locale-en.js" />
+    <Content Include="assets\js\plugins\jqgrid\jquery.jqGrid.fluid.js" />
+    <Content Include="assets\js\plugins\jqgrid\jquery.jqGrid.min.js" />
+    <Content Include="assets\js\plugins\jquery-gritter\jquery.gritter.min.js" />
+    <Content Include="assets\js\plugins\jquery-mapael\jquery.mapael.js" />
+    <Content Include="assets\js\plugins\jquery-maskedinput\jquery.masked-input.min.js" />
+    <Content Include="assets\js\plugins\jquery-mousewheel\jquery.mousewheel.js" />
+    <Content Include="assets\js\plugins\jquery-simplecolorpicker\jquery.simplecolorpicker.js" />
+    <Content Include="assets\js\plugins\jquery-slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="assets\js\plugins\jquery-sparkline\jquery.sparkline.min.js" />
+    <Content Include="assets\js\plugins\markdown\bootstrap-markdown.js" />
+    <Content Include="assets\js\plugins\markdown\markdown.js" />
+    <Content Include="assets\js\plugins\markdown\to-markdown.js" />
+    <Content Include="assets\js\plugins\modernizr\modernizr.js" />
+    <Content Include="assets\js\plugins\moment\moment.min.js" />
+    <Content Include="assets\js\plugins\morris\morris.css" />
+    <Content Include="assets\js\plugins\morris\morris.js" />
+    <Content Include="assets\js\plugins\morris\morris.min.js" />
+    <Content Include="assets\js\plugins\parsley-validation\parsley.min.js" />
+    <Content Include="assets\js\plugins\pdfmake\pdfmake.js" />
+    <Content Include="assets\js\plugins\pdfmake\pdfmake.min.js" />
+    <Content Include="assets\js\plugins\pdfmake\vfs_fonts.js" />
+    <Content Include="assets\js\plugins\raphael\maps\france_departments.js" />
+    <Content Include="assets\js\plugins\raphael\maps\usa_states.js" />
+    <Content Include="assets\js\plugins\raphael\maps\world_countries.js" />
+    <Content Include="assets\js\plugins\raphael\raphael-2.1.0.min.js" />
+    <Content Include="assets\js\plugins\raphael\raphael-min.js" />
+    <Content Include="assets\js\plugins\select2\select2.full.js" />
+    <Content Include="assets\js\plugins\select2\select2.full.min.js" />
+    <Content Include="assets\js\plugins\select2\select2.js" />
+    <Content Include="assets\js\plugins\select2\select2.min.js" />
+    <Content Include="assets\js\plugins\SheetJS\xlsx.full.min.js" />
+    <Content Include="assets\js\plugins\stat\colorbrewer.js" />
+    <Content Include="assets\js\plugins\stat\d3.min.js" />
+    <Content Include="assets\js\plugins\stat\flot\jquery.flot.min.js" />
+    <Content Include="assets\js\plugins\stat\flot\jquery.flot.orderBars.js" />
+    <Content Include="assets\js\plugins\stat\flot\jquery.flot.pie.min.js" />
+    <Content Include="assets\js\plugins\stat\flot\jquery.flot.resize.min.js" />
+    <Content Include="assets\js\plugins\stat\flot\jquery.flot.selection.min.js" />
+    <Content Include="assets\js\plugins\stat\flot\jquery.flot.time.min.js" />
+    <Content Include="assets\js\plugins\stat\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="assets\js\plugins\stat\jquery.easypiechart.min.js" />
+    <Content Include="assets\js\plugins\summernote\summernote.min.js" />
+    <Content Include="assets\js\plugins\tree\jstree.js" />
+    <Content Include="assets\js\plugins\tree\themes\default\32px.png" />
+    <Content Include="assets\js\plugins\tree\themes\default\40px.png" />
+    <Content Include="assets\js\plugins\tree\themes\default\throbber.gif" />
+    <Content Include="assets\js\plugins\typeahead\typeahead.js" />
+    <Content Include="assets\js\plugins\typeahead\typeaheadjs.1.5.1.js" />
+    <Content Include="assets\js\plugins\validator\validator.js" />
+    <Content Include="assets\js\plugins\validator\validator.min.js" />
+    <Content Include="assets\js\plugins\wizard\wizard.min.js" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="core\sicoveDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>sicoveDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="scripts\Autoconsumo.js" />
+    <Content Include="scripts\CapacidadTanque.js" />
+    <Content Include="scripts\CargaVentas.js" />
+    <Content Include="scripts\Cilindros.js" />
+    <Content Include="scripts\Comodatarios.js" />
+    <Content Include="scripts\configuraciones.js" />
+    <Content Include="scripts\ContServicios.js" />
+    <Content Include="scripts\CortesiasAlta.js" />
+    <Content Include="scripts\cortesiasAtomat.js" />
+    <Content Include="scripts\EstatusMantto.js" />
+    <Content Include="scripts\gestoriaConsulta.js" />
+    <Content Include="scripts\gestoriaConsultaServicios.js" />
+    <Content Include="scripts\GiroAutoServicio.js" />
+    <Content Include="scripts\IndicadoresUnidades.js" />
+    <Content Include="scripts\Lider.js" />
+    <Content Include="scripts\Mantenimientos.js" />
+    <Content Include="scripts\MarcaKit.js" />
+    <Content Include="scripts\MarcaTanque.js" />
+    <Content Include="scripts\pdfCortesias.js" />
+    <Content Include="scripts\Personal.js" />
+    <Content Include="scripts\RegistroUnidades.js" />
+    <Content Include="scripts\ReportesMtto.js" />
+    <Content Include="scripts\Servicios.js" />
+    <Content Include="scripts\ServiciosC.js" />
+    <Content Include="scripts\TipoPersonal.js" />
+    <Content Include="scripts\TipoRefacciones.js" />
+    <Content Include="scripts\TipoTanque.js" />
+    <Content Include="scripts\Unidades.js" />
+    <Content Include="scripts\unidadesFiltros.js" />
+    <Content Include="sicoveadmin\Admin.Master" />
+    <Content Include="assets\doc\CARGA MANUAL.csv" />
+    <Content Include="assets\js\plugins\pdfmake\pdfmake.js.map" />
+    <Content Include="assets\js\plugins\pdfmake\pdfmake.min.js.map" />
+    <None Include="Properties\PublishProfiles\Sicove.pubxml" />
+    <Content Include="sicoveadmin\ContServicios.aspx" />
+    <Content Include="sicoveadmin\FileUploadHandler.ashx" />
+    <Content Include="sicovegas\FileUploadHandler.ashx" />
+    <Content Include="sicovegas\Admin.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="sicoveadmin\Autoconsumo.aspx" />
+    <Content Include="sicoveadmin\Bases.aspx" />
+    <Content Include="sicoveadmin\CapacidadTanque.aspx" />
+    <Content Include="sicoveadmin\CargaVentas.aspx" />
+    <Content Include="sicoveadmin\Cilindros.aspx" />
+    <Content Include="sicoveadmin\Ciudades.aspx" />
+    <Content Include="sicoveadmin\Comodatarios.aspx" />
+    <Content Include="sicoveadmin\configuraciones.aspx" />
+    <Content Include="sicoveadmin\Cortesias.aspx" />
+    <Content Include="sicoveadmin\CortesiasAlta.aspx" />
+    <Content Include="sicoveadmin\cortesiasAutom.aspx" />
+    <Content Include="sicoveadmin\Default.aspx" />
+    <Content Include="sicoveadmin\Dispositivos.aspx" />
+    <Content Include="sicoveadmin\Empresas.aspx" />
+    <Content Include="sicoveadmin\Estaciones.aspx" />
+    <Content Include="sicoveadmin\Estados.aspx" />
+    <Content Include="sicoveadmin\EstatusMatto.aspx" />
+    <Content Include="sicoveadmin\gestoriaRecargas.aspx" />
+    <Content Include="sicoveadmin\GiroAutoServicio.aspx" />
+    <Content Include="sicoveadmin\Giros.aspx" />
+    <Content Include="sicoveadmin\IndicadoresUnidades.aspx" />
+    <Content Include="sicoveadmin\Lider.aspx" />
+    <Content Include="sicoveadmin\Mantenimientos.aspx" />
+    <Content Include="sicoveadmin\Marcakit.aspx" />
+    <Content Include="sicoveadmin\Marcas.aspx" />
+    <Content Include="sicoveadmin\MarcaTanque.aspx" />
+    <Content Include="sicoveadmin\Modulos.aspx" />
+    <Content Include="sicoveadmin\modulos_estacion.aspx" />
+    <Content Include="sicoveadmin\Permisos.aspx" />
+    <Content Include="sicoveadmin\Personal.aspx" />
+    <Content Include="sicoveadmin\RegistroUnidades.aspx" />
+    <Content Include="sicoveadmin\ReportesMtto.aspx" />
+    <Content Include="sicoveadmin\Roles.aspx" />
+    <Content Include="sicoveadmin\Servicios.aspx" />
+    <Content Include="sicoveadmin\ServiciosComodatarios.aspx" />
+    <Content Include="sicoveadmin\serviciosTerminal.aspx" />
+    <Content Include="sicoveadmin\Tecnicos.aspx" />
+    <Content Include="sicoveadmin\TipoPersonal.aspx" />
+    <Content Include="sicoveadmin\TipoRefacciones.aspx" />
+    <Content Include="sicoveadmin\TiposCortesia.aspx" />
+    <Content Include="sicoveadmin\TipoTanque.aspx" />
+    <Content Include="sicoveadmin\tipoTiempos.aspx" />
+    <Content Include="sicoveadmin\Unidades.aspx" />
+    <Content Include="sicoveadmin\unidadesFiltro.aspx" />
+    <Content Include="sicoveadmin\Usuarios.aspx" />
+    <Content Include="sicoveadmin\Zonas.aspx" />
+    <Content Include="sicovegas\Autoconsumo.aspx" />
+    <Content Include="sicovegas\Ciudades.aspx" />
+    <Content Include="sicovegas\configuraciones.aspx" />
+    <Content Include="sicovegas\cortesiasAutom.aspx" />
+    <Content Include="sicovegas\Default.aspx" />
+    <Content Include="sicovegas\Dispositivos.aspx" />
+    <Content Include="sicovegas\Empresas.aspx" />
+    <Content Include="sicovegas\Estaciones.aspx" />
+    <Content Include="sicovegas\Estados.aspx" />
+    <Content Include="sicovegas\EstatusMatto.aspx" />
+    <Content Include="sicovegas\GiroAutoServicio.aspx" />
+    <Content Include="sicovegas\Modulos.aspx" />
+    <Content Include="sicovegas\Permisos.aspx" />
+    <Content Include="sicovegas\Personal.aspx" />
+    <Content Include="sicovegas\RegistroUnidades.aspx" />
+    <Content Include="sicovegas\ReportesMtto.aspx" />
+    <Content Include="sicovegas\Roles.aspx" />
+    <Content Include="sicovegas\Servicios.aspx" />
+    <Content Include="sicovegas\ServiciosComodatarios.aspx" />
+    <Content Include="sicovegas\serviciosTerminal.aspx" />
+    <Content Include="sicovegas\Tablero.aspx" />
+    <Content Include="sicovegas\Tecnicos.aspx" />
+    <Content Include="sicovegas\TipoPersonal.aspx" />
+    <Content Include="sicovegas\TipoRefacciones.aspx" />
+    <Content Include="sicovegas\TiposCortesia.aspx" />
+    <Content Include="sicovegas\TipoTanque.aspx" />
+    <Content Include="sicovegas\tipoTiempos.aspx" />
+    <Content Include="sicovegas\Unidades.aspx" />
+    <Content Include="sicovegas\Usuarios.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="core\ClassBicatora.cs" />
+    <Compile Include="core\sicoveDB.cs">
+      <DependentUpon>sicoveDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="core\sicoveDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sicoveDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sicoveadmin\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Autoconsumo.aspx.cs">
+      <DependentUpon>Autoconsumo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Autoconsumo.aspx.designer.cs">
+      <DependentUpon>Autoconsumo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Bases.aspx.cs">
+      <DependentUpon>Bases.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Bases.aspx.designer.cs">
+      <DependentUpon>Bases.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\CapacidadTanque.aspx.cs">
+      <DependentUpon>CapacidadTanque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\CapacidadTanque.aspx.designer.cs">
+      <DependentUpon>CapacidadTanque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\CargaVentas.aspx.cs">
+      <DependentUpon>CargaVentas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\CargaVentas.aspx.designer.cs">
+      <DependentUpon>CargaVentas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Cilindros.aspx.cs">
+      <DependentUpon>Cilindros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Cilindros.aspx.designer.cs">
+      <DependentUpon>Cilindros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Ciudades.aspx.cs">
+      <DependentUpon>Ciudades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Ciudades.aspx.designer.cs">
+      <DependentUpon>Ciudades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Comodatarios.aspx.cs">
+      <DependentUpon>Comodatarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Comodatarios.aspx.designer.cs">
+      <DependentUpon>Comodatarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\configuraciones.aspx.cs">
+      <DependentUpon>configuraciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\configuraciones.aspx.designer.cs">
+      <DependentUpon>configuraciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\ContServicios.aspx.cs">
+      <DependentUpon>ContServicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\ContServicios.aspx.designer.cs">
+      <DependentUpon>ContServicios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Cortesias.aspx.cs">
+      <DependentUpon>Cortesias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Cortesias.aspx.designer.cs">
+      <DependentUpon>Cortesias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\CortesiasAlta.aspx.cs">
+      <DependentUpon>CortesiasAlta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\CortesiasAlta.aspx.designer.cs">
+      <DependentUpon>CortesiasAlta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\cortesiasAutom.aspx.cs">
+      <DependentUpon>cortesiasAutom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\cortesiasAutom.aspx.designer.cs">
+      <DependentUpon>cortesiasAutom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Dispositivos.aspx.cs">
+      <DependentUpon>Dispositivos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Dispositivos.aspx.designer.cs">
+      <DependentUpon>Dispositivos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Empresas.aspx.cs">
+      <DependentUpon>Empresas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Empresas.aspx.designer.cs">
+      <DependentUpon>Empresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Estaciones.aspx.cs">
+      <DependentUpon>Estaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Estaciones.aspx.designer.cs">
+      <DependentUpon>Estaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Estados.aspx.cs">
+      <DependentUpon>Estados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Estados.aspx.designer.cs">
+      <DependentUpon>Estados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\EstatusMatto.aspx.cs">
+      <DependentUpon>EstatusMatto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\EstatusMatto.aspx.designer.cs">
+      <DependentUpon>EstatusMatto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\FileUploadHandler.ashx.cs">
+      <DependentUpon>FileUploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\gestoriaRecargas.aspx.cs">
+      <DependentUpon>gestoriaRecargas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\gestoriaRecargas.aspx.designer.cs">
+      <DependentUpon>gestoriaRecargas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\GiroAutoServicio.aspx.cs">
+      <DependentUpon>GiroAutoServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\GiroAutoServicio.aspx.designer.cs">
+      <DependentUpon>GiroAutoServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Giros.aspx.cs">
+      <DependentUpon>Giros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Giros.aspx.designer.cs">
+      <DependentUpon>Giros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\IndicadoresUnidades.aspx.cs">
+      <DependentUpon>IndicadoresUnidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\IndicadoresUnidades.aspx.designer.cs">
+      <DependentUpon>IndicadoresUnidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Lider.aspx.cs">
+      <DependentUpon>Lider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Lider.aspx.designer.cs">
+      <DependentUpon>Lider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Mantenimientos.aspx.cs">
+      <DependentUpon>Mantenimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Mantenimientos.aspx.designer.cs">
+      <DependentUpon>Mantenimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Marcakit.aspx.cs">
+      <DependentUpon>Marcakit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Marcakit.aspx.designer.cs">
+      <DependentUpon>Marcakit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Marcas.aspx.cs">
+      <DependentUpon>Marcas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Marcas.aspx.designer.cs">
+      <DependentUpon>Marcas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\MarcaTanque.aspx.cs">
+      <DependentUpon>MarcaTanque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\MarcaTanque.aspx.designer.cs">
+      <DependentUpon>MarcaTanque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Modulos.aspx.cs">
+      <DependentUpon>Modulos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Modulos.aspx.designer.cs">
+      <DependentUpon>Modulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\modulos_estacion.aspx.cs">
+      <DependentUpon>modulos_estacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\modulos_estacion.aspx.designer.cs">
+      <DependentUpon>modulos_estacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Permisos.aspx.cs">
+      <DependentUpon>Permisos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Permisos.aspx.designer.cs">
+      <DependentUpon>Permisos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Personal.aspx.cs">
+      <DependentUpon>Personal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Personal.aspx.designer.cs">
+      <DependentUpon>Personal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\RegistroUnidades.aspx.cs">
+      <DependentUpon>RegistroUnidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\RegistroUnidades.aspx.designer.cs">
+      <DependentUpon>RegistroUnidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\ReportesMtto.aspx.cs">
+      <DependentUpon>ReportesMtto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\ReportesMtto.aspx.designer.cs">
+      <DependentUpon>ReportesMtto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Roles.aspx.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Servicios.aspx.cs">
+      <DependentUpon>Servicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Servicios.aspx.designer.cs">
+      <DependentUpon>Servicios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\ServiciosComodatarios.aspx.cs">
+      <DependentUpon>ServiciosComodatarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\ServiciosComodatarios.aspx.designer.cs">
+      <DependentUpon>ServiciosComodatarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\serviciosTerminal.aspx.cs">
+      <DependentUpon>serviciosTerminal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\serviciosTerminal.aspx.designer.cs">
+      <DependentUpon>serviciosTerminal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Tecnicos.aspx.cs">
+      <DependentUpon>Tecnicos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Tecnicos.aspx.designer.cs">
+      <DependentUpon>Tecnicos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\TipoPersonal.aspx.cs">
+      <DependentUpon>TipoPersonal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\TipoPersonal.aspx.designer.cs">
+      <DependentUpon>TipoPersonal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\TipoRefacciones.aspx.cs">
+      <DependentUpon>TipoRefacciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\TipoRefacciones.aspx.designer.cs">
+      <DependentUpon>TipoRefacciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\TiposCortesia.aspx.cs">
+      <DependentUpon>TiposCortesia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\TiposCortesia.aspx.designer.cs">
+      <DependentUpon>TiposCortesia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\TipoTanque.aspx.cs">
+      <DependentUpon>TipoTanque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\TipoTanque.aspx.designer.cs">
+      <DependentUpon>TipoTanque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\tipoTiempos.aspx.cs">
+      <DependentUpon>tipoTiempos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\tipoTiempos.aspx.designer.cs">
+      <DependentUpon>tipoTiempos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Unidades.aspx.cs">
+      <DependentUpon>Unidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Unidades.aspx.designer.cs">
+      <DependentUpon>Unidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\unidadesFiltro.aspx.cs">
+      <DependentUpon>unidadesFiltro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\unidadesFiltro.aspx.designer.cs">
+      <DependentUpon>unidadesFiltro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicoveadmin\Zonas.aspx.cs">
+      <DependentUpon>Zonas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicoveadmin\Zonas.aspx.designer.cs">
+      <DependentUpon>Zonas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Autoconsumo.aspx.cs">
+      <DependentUpon>Autoconsumo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Autoconsumo.aspx.designer.cs">
+      <DependentUpon>Autoconsumo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Ciudades.aspx.cs">
+      <DependentUpon>Ciudades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Ciudades.aspx.designer.cs">
+      <DependentUpon>Ciudades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\configuraciones.aspx.cs">
+      <DependentUpon>configuraciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\configuraciones.aspx.designer.cs">
+      <DependentUpon>configuraciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\cortesiasAutom.aspx.cs">
+      <DependentUpon>cortesiasAutom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\cortesiasAutom.aspx.designer.cs">
+      <DependentUpon>cortesiasAutom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Dispositivos.aspx.cs">
+      <DependentUpon>Dispositivos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Dispositivos.aspx.designer.cs">
+      <DependentUpon>Dispositivos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Empresas.aspx.cs">
+      <DependentUpon>Empresas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Empresas.aspx.designer.cs">
+      <DependentUpon>Empresas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Estaciones.aspx.cs">
+      <DependentUpon>Estaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Estaciones.aspx.designer.cs">
+      <DependentUpon>Estaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Estados.aspx.cs">
+      <DependentUpon>Estados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Estados.aspx.designer.cs">
+      <DependentUpon>Estados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\EstatusMatto.aspx.cs">
+      <DependentUpon>EstatusMatto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\EstatusMatto.aspx.designer.cs">
+      <DependentUpon>EstatusMatto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\FileUploadHandler.ashx.cs">
+      <DependentUpon>FileUploadHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\GiroAutoServicio.aspx.cs">
+      <DependentUpon>GiroAutoServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\GiroAutoServicio.aspx.designer.cs">
+      <DependentUpon>GiroAutoServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Modulos.aspx.cs">
+      <DependentUpon>Modulos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Modulos.aspx.designer.cs">
+      <DependentUpon>Modulos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Permisos.aspx.cs">
+      <DependentUpon>Permisos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Permisos.aspx.designer.cs">
+      <DependentUpon>Permisos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Personal.aspx.cs">
+      <DependentUpon>Personal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Personal.aspx.designer.cs">
+      <DependentUpon>Personal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\RegistroUnidades.aspx.cs">
+      <DependentUpon>RegistroUnidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\RegistroUnidades.aspx.designer.cs">
+      <DependentUpon>RegistroUnidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\ReportesMtto.aspx.cs">
+      <DependentUpon>ReportesMtto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\ReportesMtto.aspx.designer.cs">
+      <DependentUpon>ReportesMtto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Roles.aspx.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Servicios.aspx.cs">
+      <DependentUpon>Servicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Servicios.aspx.designer.cs">
+      <DependentUpon>Servicios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\ServiciosComodatarios.aspx.cs">
+      <DependentUpon>ServiciosComodatarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\ServiciosComodatarios.aspx.designer.cs">
+      <DependentUpon>ServiciosComodatarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\serviciosTerminal.aspx.cs">
+      <DependentUpon>serviciosTerminal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\serviciosTerminal.aspx.designer.cs">
+      <DependentUpon>serviciosTerminal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Tablero.aspx.cs">
+      <DependentUpon>Tablero.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Tablero.aspx.designer.cs">
+      <DependentUpon>Tablero.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Tecnicos.aspx.cs">
+      <DependentUpon>Tecnicos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Tecnicos.aspx.designer.cs">
+      <DependentUpon>Tecnicos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\TipoPersonal.aspx.cs">
+      <DependentUpon>TipoPersonal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\TipoPersonal.aspx.designer.cs">
+      <DependentUpon>TipoPersonal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\TipoRefacciones.aspx.cs">
+      <DependentUpon>TipoRefacciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\TipoRefacciones.aspx.designer.cs">
+      <DependentUpon>TipoRefacciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\TiposCortesia.aspx.cs">
+      <DependentUpon>TiposCortesia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\TiposCortesia.aspx.designer.cs">
+      <DependentUpon>TiposCortesia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\TipoTanque.aspx.cs">
+      <DependentUpon>TipoTanque.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\TipoTanque.aspx.designer.cs">
+      <DependentUpon>TipoTanque.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\tipoTiempos.aspx.cs">
+      <DependentUpon>tipoTiempos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\tipoTiempos.aspx.designer.cs">
+      <DependentUpon>tipoTiempos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Unidades.aspx.cs">
+      <DependentUpon>Unidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Unidades.aspx.designer.cs">
+      <DependentUpon>Unidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\unidadesFiltro.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\unidadesFiltro.aspx.designer.cs">
+      <DependentUpon>unidadesFiltro.aspx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sicovegas\Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sicovegas\Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\css\" />
+    <Folder Include="assets\fonts\" />
+    <Folder Include="assets\ico\" />
+    <Folder Include="assets\images\" />
+    <Folder Include="assets\img\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="core\sicoveDB.dbml.layout">
+      <DependentUpon>sicoveDB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54983</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54983/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,458 @@
+﻿<%@ Master Language="C#" Debug="true" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="wa_sicove.sicoveadmin.Admin" %>
+<html lang="es" >
+
+<head>
+	<title>Administración | SICOVEGAS</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="Sicove gas | AWSOFTWARE" />
+	<meta name="author" content="A.W. Software" />
+	<!-- CSS -->
+	<link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/main.css" rel="stylesheet" type="text/css">
+	<link href="../assets/css/my-custom-styles.css" rel="stylesheet" type="text/css">
+    
+
+	<!--[if lte IE 9]>
+		<link href="assets/css/main-ie.css" rel="stylesheet" type="text/css"/>
+		<link href="assets/css/main-ie-part2.css" rel="stylesheet" type="text/css"/>
+	<![endif]-->
+	<!-- CSS for demo style switcher. you can remove this -->
+	<%--<link href="../demo-style-switcher/assets/css/style-switcher.css" rel="stylesheet" type="text/css">--%>
+	<!-- Fav and touch icons -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/kingadmin-favicon144x144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/kingadmin-favicon114x114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/kingadmin-favicon72x72.png">
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="../assets/ico/kingadmin-favicon57x57.png">
+	<link rel="shortcut icon" href="../assets/ico/favicon.png">
+
+    <style> 
+        .top-bar .logo {
+            position: relative;
+            top: 0px;
+        }
+         .top-bar .logo  img {
+            height: 50px;
+            width: 80px;
+        }
+         .top-bar {
+            padding: 5px 0;
+            background-color: 
+            #8e8e8e;
+        }
+         .ooo {
+            margin-top: 0;
+            margin-bottom: 100px !important;
+        }
+    </style>
+    <script src="../assets/js/jquery/jquery-2.1.0.min.js"></script>
+	<script src="../assets/js/bootstrap/bootstrap.js"></script>
+	<script src="../assets/js/plugins/modernizr/modernizr.js"></script>
+	<script src="../assets/js/plugins/bootstrap-tour/bootstrap-tour.custom.js"></script>
+	<script src="../assets/js/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="../assets/js/king-common.js"></script>
+	<%--<script src="demo-style-switcher/assets/js/deliswitch.js"></script>--%>
+	<script src="../assets/js/plugins/stat/jquery.easypiechart.min.js"></script>
+	<script src="../assets/js/plugins/raphael/raphael-2.1.0.min.js"></script>
+	<script src="../assets/js/plugins/stat/flot/jquery.flot.min.js"></script>
+	<script src="../assets/js/plugins/stat/flot/jquery.flot.resize.min.js"></script>
+	<script src="../assets/js/plugins/stat/flot/jquery.flot.time.min.js"></script>
+	<script src="../assets/js/plugins/stat/flot/jquery.flot.pie.min.js"></script>
+	<script src="../assets/js/plugins/stat/flot/jquery.flot.tooltip.min.js"></script>
+	<script src="../assets/js/plugins/jquery-sparkline/jquery.sparkline.min.js"></script>
+
+	<script src="../assets/js/plugins/datatable/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/buttons/1.6.4/js/dataTables.buttons.min.js"></script>
+	<script src="https://cdn.datatables.net/buttons/1.6.4/js/buttons.flash.min.js"></script>
+
+    <script src="../assets/js/plugins/datatable/dataTables.responsive.min.js"></script>
+	<script src="../assets/js/plugins/datatable/dataTables.bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js" integrity="sha512-gYUM+7JjtBqPPGOgwgOZ+NwjGl+11/EP124oB+ihjlBpLgP5LTh7R/Iwcdy//cgH+QzrjspBiJI5iUegTNww3w==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://nightly.datatables.net/buttons/js/buttons.html5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
+
+
+    <script src="../assets/js/plugins/jquery-mapael/jquery.mapael.js"></script>
+	<script src="../assets/js/plugins/raphael/maps/usa_states.js"></script>
+	<script src="../assets/js/king-chart-stat.js"></script>
+	<script src="../assets/js/king-table.js"></script>
+	<script src="../assets/js/king-components.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    <script src="../assets/js/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+    <script src="../assets/js/plugins/bootstrap-datepicker/bootstrap-datepicker.js"></script>
+	<script src="../assets/js/plugins/daterangepicker/daterangepicker.js"></script>
+    <script src="../assets/js/plugins/jquery-gritter/jquery.gritter.min.js"></script>
+    <script src="../assets/js/plugins/validator/validator.min.js"></script>
+    <script src="../assets/js/global-styles/global-styles.js"></script>
+    <script src="../assets/js/plugins/moment/moment.min.js"></script>
+    <script src="../assets/js/plugins/jquery-maskedinput/jquery.masked-input.min.js"></script>
+    <script src="../assets/js/plugins/SheetJS/xlsx.full.min.js"></script>
+    <script src="../assets/js/plugins/FileSaver/FileSaver.min.js"></script>
+</head>
+<body class="sidebar-fixed topnav-fixed dashboard">
+    
+    <% if (((wa_sicove.core.si_usuarios)Session["sesionUsuario"]).id_usuario == 1) { } %>
+    <input type="hidden" id="sesIdUser" value="<% Response.Write(((wa_sicove.core.si_usuarios)Session["sesionUsuario"]).id_usuario);%>" />
+    <input type="hidden" id="sesRol" value="<%Response.Write(((wa_sicove.core.si_usuarios)Session["sesionUsuario"]).id_rol);%>" />
+
+    <input type="hidden" id="diaInicio" value="<%Response.Write(((wa_sicove.core.si_configuracion)Session["ConfiguracionCortesias"]).dia_corte_inicio);%>" />
+    <input type="hidden" id="diaFin" value="<%Response.Write(((wa_sicove.core.si_configuracion)Session["ConfiguracionCortesias"]).dia_corte_fin);%>" />
+    <input type="hidden" id="litros" value="<%Response.Write(((wa_sicove.core.si_configuracion)Session["ConfiguracionCortesias"]).litros_cortesia);%>" />
+    <div id="wrapper" class="wrapper">
+		<!-- TOP BAR -->
+		<div class="top-bar navbar-fixed-top" style="z-index: 9;">
+			<div class="container">
+				<div class="clearfix">
+					<a href="#" class="pull-left toggle-sidebar-collapse" style="margin-top: 14px;"><i class="fa fa-bars"></i></a>
+					<!-- logo -->
+					<div class="pull-left left logo">
+						<a href="Default.aspx"><img src="../assets/ico/logo.png" alt="SICOVEGAS" id="my-img" /></a>
+						<h1 class="sr-only">SICOVEGAS</h1>
+					</div>
+					<!-- end logo -->
+					<div class="pull-right right">
+						
+						<!-- top-bar-right -->
+						<div class="top-bar-right">
+							
+							<!-- logged user and the menu -->
+							<div class="logged-user" style="margin-top: 14px;">
+								<div class="btn-group">
+									<a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+										
+                                        <span class="name"><%Response.Write(((wa_sicove.core.si_usuarios)Session["sesionUsuario"]).us_nombre);%> </span> <span class="caret"></span>
+									</a>
+									<ul class="dropdown-menu" role="menu">
+                                        <% var rol = ((wa_sicove.core.si_usuarios)Session["sesionUsuario"]).id_rol; %>
+                                        <% if(rol == 1){ %>
+                                        <li>
+											<a href="configuraciones.aspx">
+												<i class="fa fa-cog"></i>
+												<span class="text"> Configuración </span>
+											</a>
+										</li>
+                                        <% } %>
+										<li>
+											<a href="#" onclick="cerrarSesion();">
+												<i class="fa fa-power-off"></i>
+												<span class="text"> Cerrar Sesión </span>
+											</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+							<!-- end logged user and the menu -->
+						</div>
+						<!-- end top-bar-right -->
+					</div>
+				</div>
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- END TOP BAR -->
+		<!-- LEFT SIDEBAR -->
+		<div id="left-sidebar" class="left-sidebar " style="margin-top: 15px;">
+			<!-- main-nav -->
+			<div class="sidebar-scroll">
+				<nav class="main-nav">
+					<ul class="main-menu ooo" id="menuAdmin">
+                        
+
+                        <%--<li class="active" >
+                            <a href="#" class="js-sub-menu-toggle"><i class="fa fa-navicon"></i><span class="text">Administración</span>
+							<i class="toggle-icon fa fa-angle-left"></i></a>
+							<ul class="sub-menu open">
+								<li><a href="Roles.aspx"><span class="text">Roles</span></a></li>
+								<li><a href="Usuarios.aspx"><span class="text">Usuarios</span></a></li>
+                                <li><a href="Modulos.aspx"><span class="text">Modulos</span></a></li>
+                                <li><a href="Permisos.aspx"><span class="text">Permisos</span></a></li>
+							</ul>
+						</li>
+                        <li class="active">
+                            <a href="#" class="js-sub-menu-toggle"><i class="fa fa-navicon"></i><span class="text">Catálogos</span>
+							<i class="toggle-icon fa fa-angle-left"></i></a>
+							<ul class="sub-menu open">
+								<li><a href="Estados.aspx"><span class="text">Estados</span></a></li>
+								<li><a href="Ciudades.aspx"><span class="text">Ciudades</span></a></li>
+                                <li><a href="Zonas.aspx"><span class="text">Zonas</span></a></li>
+                                <li><a href="Empresas.aspx"><span class="text">Empresas</span></a></li>
+                                <li><a href="Giros.aspx"><span class="text">Giros</span></a></li>
+
+                                <li><a href="Marcas.aspx"><span class="text">Marcas</span></a></li>
+                                <li><a href="Tecnicos.aspx"><span class="text">Técnicos</span></a></li>
+                                <li><a href="Dispositivos.aspx"><span class="text">Dispositivos</span></a></li>
+                                <li><a href="Estaciones.aspx"><span class="text">Estaciones</span></a></li>
+
+							</ul>
+						</li>--%>
+                        
+                    </ul>
+				</nav>
+				<!-- /main-nav -->
+			</div>
+		</div>
+        <div id="main-content-wrapper" class="content-wrapper ">
+            <input type="hidden" id="sos" class="btn btn-danger" value="sos"/>
+            <form id="form1" runat="server" data-disable="false" >
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+            </form>
+        </div>
+    </div>
+ 
+
+    
+    <script type="text/javascript">
+        var diaInicio = $("#diaInicio").val();
+        var diaFin = $("#diaFin").val();
+        var litros = $("#litros").val();
+
+        $(document).ready(function () {
+            Crear_cortesias_autom(diaInicio, diaFin, litros);
+            console.log(diaInicio + " " + diaFin + " " + litros);
+            $("#sos").button().click(function (e) {
+                automaticas_cortecias(diaInicio, diaFin, litros);
+            });
+        })
+
+
+            function cerrarSesion() {
+                $.ajax({
+                    type: "POST",
+                    url: "Default.aspx/CerrarSesion",
+                    data: JSON.stringify({ idusuario: $("#sesIdUser").val() }),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    async: false,
+                    success: function (response) {
+                        if (response.d.Result) {
+                            window.location = "../Default.aspx";
+                        }
+                    },
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            }
+            cargamenu();
+            function cargamenu() {
+                var menu = "";
+               
+                $.ajax({
+                    type: "POST",
+                    url: "Default.aspx/CargaMenuPadre",
+                    data: "{}",
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    async: false,
+                    success: function (response) {
+                        if (response.d.Result) {
+                            var parsedTest = JSON.parse(response.d.Data);
+                            var toggle = "";
+                            var submenu = "";
+
+                            for (var i = 0; i < parsedTest.length; i++) {
+                                //************************************************** PADRE
+                                if (i > 0) {
+                                    toggle = "";
+                                    submenu = "";
+                                }
+                                menu += 
+                                '<li class="' + toggle + '" >'+
+                                    '<a href="#" class="js-sub-menu-toggle">'+
+                                        '<i class="fa fa-navicon"></i>'+
+                                        '<span class="text">' + parsedTest[i].titulo + '</span>' +
+							            '<i class="toggle-icon fa fa-angle-left"></i>'+
+                                    '</a>'+
+							        '<ul class="sub-menu ' + submenu + '">';
+                                //************************************************** HIJO
+                                $.ajax({
+                                    type: "POST",
+                                    url: "Default.aspx/CargaMenuHijo",
+                                    data: '{ idmodulo: "' + parsedTest[i].idmodulo + '" }',
+                                    contentType: "application/json; charset=utf-8",
+                                    dataType: "json",
+                                    async: false,
+                                    success: function (responseHijo) {
+                                        if (responseHijo.d.Result) {
+                                            var parsedTestHijo = JSON.parse(responseHijo.d.Data);
+                                            for (var j = 0; j < parsedTestHijo.length; j++) {
+                                                menu += '<li><a href="' + parsedTestHijo[j].url + '"><span class="text">' +
+                                                parsedTestHijo[j].titulo + '</span></a></li>';
+                                            }
+                                        }
+                                    },
+                                    error: function (error) {
+                                        console.log("ERROR: " + error);
+                                    }
+                                });
+                                //**************************************************  FINALIZA PADRE
+                                menu += '</ul></li>';
+                            }
+
+
+                            $("#menuAdmin").html(menu);
+                        }
+                    },
+                    error: function (error) {
+                        console.log("ERROR: " + error);
+                    }
+                });
+
+        }
+
+        setInterval('Cancelar_cortesias_autom()', 300000);
+        function Cancelar_cortesias_autom() {
+            var localdate = moment().format('MM/DD/YYYY');
+            $.ajax({
+                url: "Cortesias.aspx/cancelar_autom_c",
+                type: "POST",
+                data: JSON.stringify({ fechaHoy: localdate }),
+                contentType: "application/json;charset=utf-8",
+                success: function (result) {
+                   
+                },
+                error: function (errormessage) {
+                    console.log(errormessage);
+                }
+            });
+        }
+
+        function automaticas_cortecias(diaInicio, diaFin, litros) {
+            var localdate = moment().format('MM/DD/YYYY HH:mm:ss');
+            var localdateSinHora = moment().format('MM/DD/YYYY');
+            var fecha = new Date();
+            var anio = moment().year();
+            var mes = moment().month();
+            var mesFormat = getMonth(mes)
+            var corte = mesFormat + '/' + diaFin + '/' + anio;
+
+            console.log(corte);
+            console.log(localdateSinHora);
+            console.log(localdateSinHora+" == "+corte);
+                var mesAnterior = mes - 1;
+                var anio2 = mesAnterior < 0 ? anio - 1 : anio;
+                mesAnterior = mesAnterior < 0 ? 11 : mesAnterior;
+                var mesAnteriorFormat = getMonth(mesAnterior);
+                var fechaInicioCorte = mesAnteriorFormat + '/' + diaInicio + '/' + anio2;
+                var fechaFinCorte = mesFormat + '/' + diaFin + '/' + anio + ' 23:59:59.000';
+                $.ajax({
+                    url: "Cortesias.aspx/Crear_autom_c",
+                    type: "POST",
+                    data: JSON.stringify({ fechaInicio: fechaInicioCorte, fechaFin: fechaFinCorte, Litros: litros }),
+                    contentType: "application/json;charset=utf-8",
+                    success: function (result) {
+                        console.log('cortecias automaticas generadas');
+                    },
+                    error: function (errormessage) {
+                        console.log(errormessage);
+                    }
+                });
+        }
+
+        function Crear_cortesias_autom(diaInicio, diaFin, litros) {
+            var localdate = moment().format('MM/DD/YYYY HH:mm:ss');
+            var localdateSinHora = moment().format('MM/DD/YYYY');
+            var fecha = new Date();
+            var anio = moment().year();
+            var mes = moment().month();
+            var mesFormat = getMonth(mes)
+            var corte = mesFormat + '/' + diaFin + '/' + anio;
+
+            console.log(corte);
+            console.log(localdateSinHora);
+            console.log(localdateSinHora+" == "+corte);
+            if (localdateSinHora == corte) {
+                var mesAnterior = mes - 1;
+                var anio2 = mesAnterior < 0 ? anio - 1 : anio;
+                mesAnterior = mesAnterior < 0 ? 11 : mesAnterior;
+                var mesAnteriorFormat = getMonth(mesAnterior);
+                var fechaInicioCorte = mesAnteriorFormat + '/' + diaInicio + '/' + anio2;
+                var fechaFinCorte = mesFormat + '/' + diaFin + '/' + anio + ' 23:59:59.000';
+                $.ajax({
+                    url: "Cortesias.aspx/Crear_autom_c",
+                    type: "POST",
+                    data: JSON.stringify({ fechaInicio: fechaInicioCorte, fechaFin: fechaFinCorte, Litros: litros }),
+                    contentType: "application/json;charset=utf-8",
+                    success: function (result) {
+                        console.log('cortecias automaticas generadas');
+                    },
+                    error: function (errormessage) {
+                        console.log(errormessage);
+                    }
+                });
+            }
+            
+        }
+
+        function getMonth(mes) {
+            if (mes == 0) {
+                return '01';
+            }else if (mes == 1) {
+                return '02';
+            }else if (mes == 2) {
+                return '03';
+            }else if (mes == 3) {
+                return '04';
+            }else if (mes == 4) {
+                return '05';
+            }else if (mes == 5) {
+                return '06';
+            }else if (mes == 6) {
+                return '07';
+            }else if (mes == 7) {
+                return '08';
+            }else if (mes == 8) {
+                return '09';
+            }else if (mes == 9) {
+                return '10';
+            }else if (mes == 10) {
+                return '11';
+            }else if (mes == 11) {
+                return '12';
+            }
+        }
+
+        function EnviarCorreo() {
+
+            const fFinal = moment(new Date).format('YYYY-MM-DD HH:mm:ss');
+            const fInicial = moment(fFinal).add({ 'hours': -2 }).format('YYYY-MM-DD HH:mm:ss');
+
+            console.log(fInicial);
+            console.log(fFinal);
+
+            const data = { fInicial, fFinal };
+
+            $.ajax({
+                url: "Servicios.aspx/Correo",
+                type: "POST",
+                contentType: "application/json;charset=utf-8",
+                data: JSON.stringify(data),
+                dataType: "json",
+                success: function (result) {
+
+                    console.log(result);
+                    console.log('CORREO');
+            
+                },
+                error: function (errormessage) {
+                    console.log(errormessage);
+                }
+            });
+
+        }
+    </script>
+    
+</body>
+</html>

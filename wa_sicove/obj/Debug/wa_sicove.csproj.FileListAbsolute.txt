@@ -1,0 +1,348 @@
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\ApplicationInsights.config
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\roslyn\csc.exe
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\roslyn\vbc.exe
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\wa_sicove.dll.config
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\wa_sicove.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\wa_sicove.pdb
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\Microsoft.AI.Web.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\Microsoft.AI.Web.xml
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\obj\Debug\wa_sicove.dll
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\obj\Debug\wa_sicove.pdb
+C:\Users\ACERLAP\documents\visual studio 2015\Projects\wa_sicove\wa_sicove\obj\Debug\wa_sicove.csprojResolveAssemblyReference.cache
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\ApplicationInsights.config
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\roslyn\csc.exe
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\roslyn\vbc.exe
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\wa_sicove.dll.config
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\wa_sicove.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\wa_sicove.pdb
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\Microsoft.AI.Web.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\Microsoft.AI.Web.xml
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\obj\Debug\wa_sicove.csprojAssemblyReference.cache
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CoreCompileInputs.cache
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CopyComplete
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\obj\Debug\wa_sicove.dll
+C:\Users\MiguelJimenez\Documents\Doc Resp\02 SICOVE GAS\wa_sicove\wa_sicove\obj\Debug\wa_sicove.pdb
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\ApplicationInsights.config
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\roslyn\csc.exe
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\roslyn\vbc.exe
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\wa_sicove.dll.config
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\wa_sicove.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\wa_sicove.pdb
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\Microsoft.AI.Web.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\Microsoft.AI.Web.xml
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\obj\Debug\wa_sicove.csprojAssemblyReference.cache
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CoreCompileInputs.cache
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CopyComplete
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\obj\Debug\wa_sicove.dll
+C:\Users\MiguelJimenez\Desktop\AW\00 Simsa\02 SICOVE\wa_sicove\wa_sicove\obj\Debug\wa_sicove.pdb
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\ApplicationInsights.config
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\roslyn\csc.exe
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\roslyn\vbc.exe
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\wa_sicove.dll.config
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\wa_sicove.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\wa_sicove.pdb
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\Microsoft.AI.Web.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\Microsoft.ApplicationInsights.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\Microsoft.AI.Web.xml
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\Microsoft.ApplicationInsights.xml
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\obj\Debug\wa_sicove.csprojAssemblyReference.cache
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CoreCompileInputs.cache
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CopyComplete
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\obj\Debug\wa_sicove.dll
+C:\Users\VR\Documents\Hector\ASP\wa_sicove\wa_sicove\obj\Debug\wa_sicove.pdb
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\ApplicationInsights.config
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\roslyn\csc.exe
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\roslyn\vbc.exe
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\wa_sicove.dll.config
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\wa_sicove.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\wa_sicove.pdb
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\Microsoft.AI.Web.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\Microsoft.ApplicationInsights.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\Microsoft.AI.Web.xml
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\Microsoft.ApplicationInsights.xml
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\obj\Debug\wa_sicove.csprojAssemblyReference.cache
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CoreCompileInputs.cache
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CopyComplete
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\obj\Debug\wa_sicove.dll
+C:\Users\VR\Documents\Hector\sicove\wa_sicove\obj\Debug\wa_sicove.pdb
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\ApplicationInsights.config
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\roslyn\csc.exe
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\roslyn\vbc.exe
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\wa_sicove.dll.config
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\wa_sicove.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\wa_sicove.pdb
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\Microsoft.AI.Web.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\Microsoft.AI.Web.xml
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Hecto\Documents\sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Hecto\Documents\sicove\wa_sicove\obj\Debug\wa_sicove.csprojAssemblyReference.cache
+C:\Users\Hecto\Documents\sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CoreCompileInputs.cache
+C:\Users\Hecto\Documents\sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CopyComplete
+C:\Users\Hecto\Documents\sicove\wa_sicove\obj\Debug\wa_sicove.dll
+C:\Users\Hecto\Documents\sicove\wa_sicove\obj\Debug\wa_sicove.pdb
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\ApplicationInsights.config
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\roslyn\csc.exe
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\roslyn\vbc.exe
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\wa_sicove.dll.config
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\wa_sicove.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\wa_sicove.pdb
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\Microsoft.AI.Web.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\Microsoft.ApplicationInsights.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\Microsoft.AI.Web.xml
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\Microsoft.ApplicationInsights.xml
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\obj\Debug\wa_sicove.csprojAssemblyReference.cache
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CoreCompileInputs.cache
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CopyComplete
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\obj\Debug\wa_sicove.dll
+C:\Users\VR\Documents\Antonio\PruebaNuevo\sicove\wa_sicove\obj\Debug\wa_sicove.pdb
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\ApplicationInsights.config
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\roslyn\csc.exe
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\roslyn\vbc.exe
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\wa_sicove.dll.config
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\wa_sicove.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\wa_sicove.pdb
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\Microsoft.AI.Web.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\Microsoft.AI.Web.xml
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\obj\Debug\wa_sicove.csprojAssemblyReference.cache
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CoreCompileInputs.cache
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CopyComplete
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\obj\Debug\wa_sicove.dll
+C:\Users\MiguelJimenez\Documents\Sicove\SICOVE\sicove\wa_sicove\obj\Debug\wa_sicove.pdb
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\ApplicationInsights.config
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\roslyn\csc.exe
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\roslyn\vbc.exe
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\wa_sicove.dll.config
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\wa_sicove.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\wa_sicove.pdb
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\Microsoft.AI.Web.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\Microsoft.AI.Web.xml
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\obj\Debug\wa_sicove.csprojAssemblyReference.cache
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CoreCompileInputs.cache
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CopyComplete
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\obj\Debug\wa_sicove.dll
+C:\Users\MiguelJimenez\Documents\VIC\sicove\wa_sicove\obj\Debug\wa_sicove.pdb
+C:\Users\awsof\Documents\sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CoreCompileInputs.cache
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\ApplicationInsights.config
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\roslyn\csc.exe
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\roslyn\vbc.exe
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\wa_sicove.dll.config
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\wa_sicove.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\wa_sicove.pdb
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\Microsoft.AI.Web.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\Microsoft.ApplicationInsights.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\Microsoft.AI.Web.xml
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\Microsoft.ApplicationInsights.xml
+C:\Users\awsof\Documents\sicove\wa_sicove\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\awsof\Documents\sicove\wa_sicove\obj\Debug\wa_sicove.csproj.CopyComplete
+C:\Users\awsof\Documents\sicove\wa_sicove\obj\Debug\wa_sicove.dll
+C:\Users\awsof\Documents\sicove\wa_sicove\obj\Debug\wa_sicove.pdb
+C:\Users\awsof\Documents\sicove\wa_sicove\obj\Debug\wa_sicove.csprojAssemblyReference.cache
